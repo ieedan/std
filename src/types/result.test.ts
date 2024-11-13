@@ -63,7 +63,7 @@ describe('Result', () => {
 	it('Result.unwrap: Should throw if failed', () => {
 		const result = failingFunction('oops!');
 
-		expect(() => result.unwrap()).toThrow()
+		expect(() => result.unwrap()).toThrow();
 	});
 
 	// --- unwrapOr ---
@@ -115,7 +115,7 @@ describe('Result', () => {
 	it('Result.unwrapErr: Should throw if passed', () => {
 		const result = passingFunction(true);
 
-		expect(() => result.unwrapErr()).toThrow()
+		expect(() => result.unwrapErr()).toThrow();
 	});
 
 	// --- unwrapErrOr ---
