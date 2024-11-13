@@ -10,7 +10,7 @@
 		"attributePosition": "auto"
 	},
 	"files": {
-		"ignore": ["dist", "node_modules", "docs"]
+		"ignore": ["dist", "node_modules", "docs", "blocks-manifest.json"]
 	},
 	"organizeImports": { "enabled": true },
 	"linter": {
@@ -81,7 +81,7 @@
 				"useValidTypeof": "error"
 			}
 		},
-		"ignore": ["**/dist/*", "**/node_modules/*", "blocks-manifest.json"]
+		"ignore": ["**/dist/*", "**/node_modules/*"]
 	},
 	"javascript": {
 		"formatter": {
