@@ -23,8 +23,8 @@ jobs:
             - name: Run tests with coverage
               run: pnpm coverage
 
-            - name: Generate Coverage Badge
-              uses: jpb06/jest-badges-action@latest
+            - name: Coverage Badges
+              uses: jpb06/coverage-badges-action@latest
               with:
                   branches: main
-                  coverage-summary-path: coverage/coverage-summary.json
+                  badges-icon: vitest
