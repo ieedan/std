@@ -2,6 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { truncate } from './truncate';
 
 describe('truncate', () => {
+	it('Returns string when string length is less than max length', () => {
+		const str = truncate('Hello World!', 100);
+
+		expect(str).toBe('Hello World!');
+	});
+
 	it('Correctly truncates forward', () => {
 		const str = truncate('Hello World!', 5);
 

@@ -103,7 +103,7 @@ const formatToString = (
 
 	if (parsed.isErr()) return Err(parsed.unwrapErr().message);
 
-	return formatToString(parsed.unwrap());
+	return formatToString(parsed.unwrap(), separator);
 };
 
 export { parse, validate, formatToString };

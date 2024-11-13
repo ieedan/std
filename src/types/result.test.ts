@@ -1,4 +1,4 @@
-import { assert, describe, expect, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { Err, Ok, type Result } from './result';
 
 const failingFunction = <E>(err: E): Result<boolean, E> => Err(err);
@@ -63,7 +63,7 @@ describe('Result', () => {
 	it('Result.unwrap: Should throw if failed', () => {
 		const result = failingFunction('oops!');
 
-		assert.throws(result.unwrap);
+		expect(() => result.unwrap()).toThrow()
 	});
 
 	// --- unwrapOr ---
@@ -115,7 +115,7 @@ describe('Result', () => {
 	it('Result.unwrapErr: Should throw if passed', () => {
 		const result = passingFunction(true);
 
-		assert.throws(result.unwrapErr);
+		expect(() => result.unwrapErr()).toThrow()
 	});
 
 	// --- unwrapErrOr ---
@@ -143,7 +143,7 @@ describe('Result', () => {
 
 		const result = failingFunction(expected);
 
-		expect(result.unwrapErrOr('nope')).toBe(expected);
+		expect(result.unwrapErrOrElse(() => 'nope')).toBe(expected);
 	});
 
 	it('Result.unwrapErrOrElse: Expect correct error on fail', () => {
@@ -151,7 +151,7 @@ describe('Result', () => {
 
 		const result = passingFunction('nope');
 
-		expect(result.unwrapErrOr(expected)).toBe(expected);
+		expect(result.unwrapErrOrElse(() => expected)).toBe(expected);
 	});
 
 	// --- expect ---
@@ -167,7 +167,7 @@ describe('Result', () => {
 	it('Result.expect: Should throw if failed', () => {
 		const result = failingFunction('oops!');
 
-		assert.throws(() => result.expect('Oh no'), 'Oh no');
+		expect(() => result.expect('Oh no')).toThrow('Oh no');
 	});
 
 	// --- expectErr ---
@@ -183,7 +183,7 @@ describe('Result', () => {
 	it('Result.expectErr: Should throw if ok', () => {
 		const result = passingFunction('oops!');
 
-		assert.throws(() => result.expectErr('Oh no'), 'Oh no');
+		expect(() => result.expectErr('Oh no')).toThrow('Oh no');
 	});
 
 	// --- map ---
