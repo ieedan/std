@@ -6,7 +6,8 @@
 		"format": "biome format --write",
 		"lint": "biome lint --write",
 		"check": "biome check",
-		"build": "ts-blocks build --dirs src"
+		"build": "ts-blocks build --dirs src",
+		"docs:generate": "typedoc"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
