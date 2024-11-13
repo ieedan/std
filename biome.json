@@ -81,7 +81,7 @@
 				"useValidTypeof": "error"
 			}
 		},
-		"ignore": ["**/dist/*", "**/node_modules/*"]
+		"ignore": ["**/dist/*", "**/node_modules/*", "blocks-manifest.json"]
 	},
 	"javascript": {
 		"formatter": {
