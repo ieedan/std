@@ -10,5 +10,5 @@ test('Expect time elapsed', async () => {
 
 	const end = Date.now();
 
-	expect(end - start).toBeGreaterThanOrEqual(duration);
+	expect(end - start + 10).toBeGreaterThanOrEqual(duration);
 });

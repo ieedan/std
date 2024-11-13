@@ -3,6 +3,7 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
 	test: {
 		coverage: {
+			reportOnFailure: true,
 			provider: 'v8',
 			reporter: ['json-summary'],
 			exclude: ['node_modules/', '**/*.d.ts', '**/*.test.ts'],
