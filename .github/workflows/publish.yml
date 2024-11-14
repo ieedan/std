@@ -11,7 +11,7 @@ permissions:
     id-token: write
 
 jobs:
-    build:
+    release-please:
         runs-on: ubuntu-latest
         permissions:
           # Required for pushing to the repository
@@ -28,21 +28,12 @@ jobs:
 
             - name: Install dependencies
               run: pnpm install
-            
-            - name: Commit to main
-              if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-              run: |
-                git config --local user.email "github-actions[bot]@users.noreply.github.com"
-                git config --local user.name "github-actions[bot]"
-                git add .
-                git commit -m "Build blocks-manifest.json" || exit 0
-                git push origin main
 
-    release-please:
-        needs: build
-        runs-on: ubuntu-latest
-        steps:
-            - uses: googleapis/release-please-action@v4
+            - name: Build blocks-manifest.json
+              run: pnpm build
+
+            - name: Create Release
+              uses: googleapis/release-please-action@v4
               id: release
               with:
                   token: ${{secrets.GITHUB_TOKEN}}
