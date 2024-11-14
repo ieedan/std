@@ -3,7 +3,14 @@
 Types and utility functions brokered with ts-blocks.
 
 ```bash
-npx ts-blocks@next add github.com/ieedan/std/types/result
+npx ts-blocks add github/ieedan/std/types/result
+```
+
+or 
+
+Add as a repo in config:
+```bash
+npx ts-blocks init --repos https://github.com/ieedan/std
 ```
 
 # Blocks
