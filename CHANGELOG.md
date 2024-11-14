@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/ieedan/std/compare/v1.0.2...v1.0.3) (2024-11-14)
+
+
+### Bug Fixes
+
+* ensure vitest tests all files for coverage ([f0ffb14](https://github.com/ieedan/std/commit/f0ffb1477412874b8d8a83008c838f13c20f016c))
+* remove `add` block ([9bf51e8](https://github.com/ieedan/std/commit/9bf51e87f938e1f16d32ec867269884d578b30ba))
+
 ## [1.0.2](https://github.com/ieedan/std/compare/v1.0.1...v1.0.2) (2024-11-14)
 
 
