@@ -3,21 +3,12 @@ name: CI
 on:
   pull_request:
     branches: [ main ]
-  push:
-    branches: [ main ]
 
 jobs:
     CI:
         runs-on: ubuntu-latest
-        permissions:
-          # Required for pushing to the repository
-          contents: write
-          pull-requests: write
-
         steps:
             - uses: actions/checkout@v4
-              with:
-                  fetch-depth: 0
             - uses: pnpm/action-setup@v4
             - uses: actions/setup-node@v4
               with:
@@ -31,12 +22,3 @@ jobs:
 
             - name: Build
               run: pnpm build
-
-            - name: Commit to main
-              if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-              run: |
-                git config --local user.email "github-actions[bot]@users.noreply.github.com"
-                git config --local user.name "github-actions[bot]"
-                git add .
-                git commit -m "Build blocks-manifest.json" || exit 0
-                git push origin main
