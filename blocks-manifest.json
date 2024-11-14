@@ -22,19 +22,6 @@
 		"name": "utilities",
 		"blocks": [
 			{
-				"name": "add",
-				"directory": "src/utilities",
-				"category": "utilities",
-				"tests": false,
-				"subdirectory": false,
-				"files": [
-					"add.ts"
-				],
-				"localDependencies": [],
-				"dependencies": [],
-				"devDependencies": []
-			},
-			{
 				"name": "array-sum",
 				"directory": "src/utilities",
 				"category": "utilities",
