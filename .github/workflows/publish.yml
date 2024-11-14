@@ -30,7 +30,7 @@ jobs:
               run: pnpm install
 
             - name: Build blocks-manifest.json
-              run: pnpm install
+              run: pnpm build
             
             - name: Commit to main
               if: github.event_name == 'push' && github.ref == 'refs/heads/main'
