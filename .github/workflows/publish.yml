@@ -11,7 +11,7 @@ permissions:
     id-token: write
 
 jobs:
-    release-please:
+    build:
         runs-on: ubuntu-latest
         permissions:
           # Required for pushing to the repository
@@ -30,9 +30,22 @@ jobs:
               run: pnpm install
 
             - name: Build blocks-manifest.json
-              run: pnpm build
+              run: pnpm install
+            
+            - name: Commit to main
+              if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+              run: |
+                git config --local user.email "github-actions[bot]@users.noreply.github.com"
+                git config --local user.name "github-actions[bot]"
+                git add .
+                git commit -m "chore(main): Update blocks-manifest.json" || exit 0
+                git push origin main
 
-            - name: Create Release
+    release-please:
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Release Please
               uses: googleapis/release-please-action@v4
               id: release
               with:
