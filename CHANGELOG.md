@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ieedan/std/compare/v1.0.1...v1.0.2) (2024-11-14)
+
+
+### Bug Fixes
+
+* ensure blocks-manifest gets built pre release ([b0832d6](https://github.com/ieedan/std/commit/b0832d6fb37b86de29576367c28643ab5aa78e82))
+
 ## [1.0.1](https://github.com/ieedan/std/compare/v1.0.0...v1.0.1) (2024-11-14)
 
 
