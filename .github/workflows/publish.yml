@@ -1,0 +1,26 @@
+name: release-please
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: write
+    pull-requests: write
+    id-token: write
+
+jobs:
+    release-please:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: googleapis/release-please-action@v4
+              id: release
+              with:
+                  token: ${{secrets.GITHUB_TOKEN}}
+
+            # Output which releases were created
+            - name: Output release info
+              run: |
+                  echo "releases_created:" ${{ steps.release.outputs.releases_created }}
+                  echo "released paths:" ${{ steps.release.outputs.paths_released }}
