@@ -6,9 +6,10 @@ Types and utility functions brokered with ts-blocks.
 npx ts-blocks add github/ieedan/std/types/result
 ```
 
-or 
+or
 
 Add as a repo in config:
+
 ```bash
 npx ts-blocks init --repos https://github.com/ieedan/std
 ```
@@ -23,6 +24,7 @@ npx ts-blocks init --repos https://github.com/ieedan/std
 | [utilities/dispatcher](https://ieedan.github.io/std/types/utilities_dispatcher.Dispatcher.html)         | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/ipv4-address](https://ieedan.github.io/std/modules/utilities_ipv4_address.html)              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/is-number](https://ieedan.github.io/std/functions/utilities_is_number.isNumber.html)         | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utilities/lines](https://ieedan.github.io/std/functions/utilities_lines.html)                          | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/map-to-array](https://ieedan.github.io/std/functions/utilities_map_to_array.mapToArray.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/pad](https://ieedan.github.io/std/functions/utilities_pad.leftPad.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/sleep](https://ieedan.github.io/std/functions/utilities_sleep.sleep.html)                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
