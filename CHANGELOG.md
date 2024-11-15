@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ieedan/std/compare/v1.0.3...v1.1.0) (2024-11-15)
+
+
+### Features
+
+* add `leftPadMin` and `rightPadMin`  to pad ([ada8877](https://github.com/ieedan/std/commit/ada8877acce570dd66c7d0ae45adaaf8aa9b7e87))
+
 ## [1.0.3](https://github.com/ieedan/std/compare/v1.0.2...v1.0.3) (2024-11-14)
 
 
