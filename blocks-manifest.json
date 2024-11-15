@@ -4,7 +4,7 @@
 		"blocks": [
 			{
 				"name": "result",
-				"directory": "src\\types",
+				"directory": "src/types",
 				"category": "types",
 				"tests": true,
 				"subdirectory": false,
@@ -23,7 +23,7 @@
 		"blocks": [
 			{
 				"name": "array-sum",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -37,7 +37,7 @@
 			},
 			{
 				"name": "array-to-map",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -51,7 +51,7 @@
 			},
 			{
 				"name": "dispatcher",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -65,7 +65,7 @@
 			},
 			{
 				"name": "ipv4-address",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -82,7 +82,7 @@
 			},
 			{
 				"name": "is-number",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -96,7 +96,7 @@
 			},
 			{
 				"name": "lines",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -112,7 +112,7 @@
 			},
 			{
 				"name": "map-to-array",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -126,7 +126,7 @@
 			},
 			{
 				"name": "pad",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -140,7 +140,7 @@
 			},
 			{
 				"name": "sleep",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -154,7 +154,7 @@
 			},
 			{
 				"name": "stopwatch",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
@@ -168,7 +168,7 @@
 			},
 			{
 				"name": "truncate",
-				"directory": "src\\utilities",
+				"directory": "src/utilities",
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": false,
