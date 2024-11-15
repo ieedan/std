@@ -95,6 +95,22 @@
 				"devDependencies": []
 			},
 			{
+				"name": "lines",
+				"directory": "src/utilities",
+				"category": "utilities",
+				"tests": true,
+				"subdirectory": false,
+				"files": [
+					"lines.ts",
+					"lines.test.ts"
+				],
+				"localDependencies": [
+					"utilities/pad"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
 				"name": "map-to-array",
 				"directory": "src/utilities",
 				"category": "utilities",
