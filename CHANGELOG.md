@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/ieedan/std/compare/v1.0.3...v1.1.0) (2024-11-15)
+
+
+### Features
+
+* `lines` block ([565f471](https://github.com/ieedan/std/commit/565f471e95a39ec4bf27f0722a650c39d8024bbc))
+* add `leftPadMin` and `rightPadMin` to `pad` ([ef58942](https://github.com/ieedan/std/commit/ef5894250405be8eee6b9ea4c59991c6a03315c5))
+
 ## [1.0.3](https://github.com/ieedan/std/compare/v1.0.2...v1.0.3) (2024-11-14)
 
 
