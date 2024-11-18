@@ -1,3 +1,5 @@
+import { stripAsni } from './strip-ansi';
+
 /** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
  *
  * @param str String to add padding to
@@ -30,9 +32,10 @@ const leftPad = (str: string, space: number, padWith = ' ') => {
  * ```
  */
 const leftPadMin = (str: string, length: number, padWith = ' ') => {
-	if (str.length > length) throw new Error('String length is greater than the length provided.');
+	if (stripAsni(str).length > length)
+		throw new Error('String length is greater than the length provided.');
 
-	return padWith.repeat(length - str.length) + str;
+	return padWith.repeat(length - stripAsni(str).length) + str;
 };
 
 /** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
@@ -67,9 +70,10 @@ const rightPad = (str: string, space: number, padWith = ' ') => {
  * ```
  */
 const rightPadMin = (str: string, length: number, padWith = ' ') => {
-	if (str.length > length) throw new Error('String length is greater than the length provided.');
+	if (stripAsni(str).length > length)
+		throw new Error('String length is greater than the length provided.');
 
-	return str + padWith.repeat(length - str.length);
+	return str + padWith.repeat(length - stripAsni(str).length);
 };
 
 export { leftPad, leftPadMin, rightPad, rightPadMin };
