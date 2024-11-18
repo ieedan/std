@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { leftPad, leftPadMin, rightPad, rightPadMin } from './pad';
+import { stripAsni } from './strip-ansi';
 
 describe('leftPad', () => {
 	it('Correctly pads', () => {
@@ -22,6 +23,10 @@ describe('leftPadMin', () => {
 
 	it('Correctly pads with the padding character `padWith`', () => {
 		expect(leftPadMin('1', 3, '.')).toBe('..1');
+	});
+
+	it('Correctly pads with escape characters', () => {
+		expect(stripAsni(leftPadMin('\x1b[1;31m1', 3, '.')).length).toBe(3);
 	});
 
 	it('Errors when string length is greater than `length`', () => {
@@ -50,6 +55,10 @@ describe('rightPadMin', () => {
 
 	it('Correctly pads with the padding character `padWith`', () => {
 		expect(rightPadMin('1', 3, '.')).toBe('1..');
+	});
+
+	it('Correctly pads with escape characters', () => {
+		expect(stripAsni(rightPadMin('\x1b[1;31m1', 3, '.')).length).toBe(3);
 	});
 
 	it('Errors when string length is greater than `length`', () => {
