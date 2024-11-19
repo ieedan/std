@@ -1,9 +1,9 @@
 # std
 
-Types and utility functions brokered with ts-blocks.
+Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 
 ```bash
-npx ts-blocks add github/ieedan/std/types/result
+npx jsrepo add github/ieedan/std/types/result
 ```
 
 or
@@ -11,7 +11,7 @@ or
 Add as a repo in config:
 
 ```bash
-npx ts-blocks init --repos https://github.com/ieedan/std
+npx jsrepo init --repos github/ieedan/std
 ```
 
 # Blocks
