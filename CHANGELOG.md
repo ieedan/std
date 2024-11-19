@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ieedan/std/compare/v1.2.0...v1.2.1) (2024-11-19)
+
+
+### Bug Fixes
+
+* upgrade to jsrepo ([939c6b5](https://github.com/ieedan/std/commit/939c6b5f9f349e61f63b55e9de4a1f310054384d))
+
 ## [1.2.0](https://github.com/ieedan/std/compare/v1.1.0...v1.2.0) (2024-11-18)
 
 
