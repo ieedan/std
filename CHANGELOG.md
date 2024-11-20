@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/ieedan/std/compare/v1.4.0...v1.5.0) (2024-11-20)
+
+
+### Features
+
+* Add triangles to `utilities/math` ([886c83d](https://github.com/ieedan/std/commit/886c83de13a0665d409023b8c28291da108bbd73))
+
 ## [1.4.0](https://github.com/ieedan/std/compare/v1.3.0...v1.4.0) (2024-11-20)
 
 
