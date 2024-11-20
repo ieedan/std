@@ -9,6 +9,7 @@
 		"format": "biome format --write",
 		"lint": "biome lint --write",
 		"check": "biome check",
+		"check:types": "tsc --noEmit",
 		"build": "jsrepo build --dirs src",
 		"docs:generate": "typedoc"
 	},
