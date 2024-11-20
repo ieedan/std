@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ieedan/std/compare/v1.3.0...v1.4.0) (2024-11-20)
+
+
+### Features
+
+* add conversions to `utiltities/math` ([f4f6e36](https://github.com/ieedan/std/commit/f4f6e363cb3ca7aa8fce50a97bb09575c74a0626))
+
 ## [1.3.0](https://github.com/ieedan/std/compare/v1.2.1...v1.3.0) (2024-11-20)
 
 
