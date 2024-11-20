@@ -101,7 +101,15 @@
 				"category": "utilities",
 				"tests": true,
 				"subdirectory": true,
-				"files": ["fractions.test.ts", "fractions.ts", "gcf.test.ts", "gcf.ts", "index.ts"],
+				"files": [
+					"conversions.test.ts",
+					"conversions.ts",
+					"fractions.test.ts",
+					"fractions.ts",
+					"gcf.test.ts",
+					"gcf.ts",
+					"index.ts"
+				],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
