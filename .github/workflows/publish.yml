@@ -32,6 +32,9 @@ jobs:
             - name: Build jsrepo-manifest.json
               run: pnpm build
 
+            - name: Format manifest
+              run: pnpm format
+
             - name: Create pull request with changes
               uses: peter-evans/create-pull-request@v7
               with:
