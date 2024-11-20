@@ -108,7 +108,9 @@
 					"fractions.ts",
 					"gcf.test.ts",
 					"gcf.ts",
-					"index.ts"
+					"index.ts",
+					"triangles.test.ts",
+					"triangles.ts"
 				],
 				"localDependencies": [],
 				"dependencies": [],
