@@ -11,8 +11,9 @@
  * ```
  */
 const gcf = (a: number, b: number): number => {
-	let num1: number = a;
-	let num2: number = b;
+	// if they are negative we really just want the same thing
+	let num1: number = Math.abs(a);
+	let num2: number = Math.abs(b);
 
 	while (num1 !== num2) {
 		if (num1 > num2) {
