@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/ieedan/std/compare/v1.2.1...v1.3.0) (2024-11-20)
+
+
+### Features
+
+* math block ([7a0bc24](https://github.com/ieedan/std/commit/7a0bc2416df1696593702f8527586bab29c20eeb))
+* math.fractions ([fa1fe47](https://github.com/ieedan/std/commit/fa1fe47fa27c0384446d305e022cb0e9cf4afd32))
+
 ## [1.2.1](https://github.com/ieedan/std/compare/v1.2.0...v1.2.1) (2024-11-19)
 
 
