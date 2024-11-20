@@ -28,7 +28,9 @@ npx jsrepo init --repos github/ieedan/std
 | [utilities/is-number](https://ieedan.github.io/std/functions/utilities_is_number.isNumber.html)         | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/lines](https://ieedan.github.io/std/functions/utilities_lines.html)                          | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/map-to-array](https://ieedan.github.io/std/functions/utilities_map_to_array.mapToArray.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utilities/math](https://ieedan.github.io/std/modules/utilities_math.html)                              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/pad](https://ieedan.github.io/std/functions/utilities_pad.leftPad.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/sleep](https://ieedan.github.io/std/functions/utilities_sleep.sleep.html)                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/stopwatch](https://ieedan.github.io/std/types/utilities_stopwatch.Stopwatch.html)            | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utilities/strip-ansi](https://ieedan.github.io/std/functions/utilities_strip_ansi.stripAsni.html)      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utilities/truncate](https://ieedan.github.io/std/functions/utilities_truncate.truncate.html)           | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
