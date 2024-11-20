@@ -1,0 +1,42 @@
+/** Solves the GCF (Greatest Common Factor) using the **Euclidean Algorithm**
+ *
+ * @param a
+ * @param b
+ * @returns
+ *
+ * ## Usage
+ * ```ts
+ * gcf(1920, 1080); // 120
+ * gcf(2, 2); // 2
+ * ```
+ */
+const gcf = (a: number, b: number): number => {
+	let num1: number = a;
+	let num2: number = b;
+
+	while (num1 !== num2) {
+		if (num1 > num2) {
+			num1 -= num2;
+		} else {
+			num2 -= num1;
+		}
+	}
+
+	return num1;
+};
+
+/** Solves the GCD (Greatest Common Divisor) using the **Euclidean Algorithm** (Alternate alias of `gcf`)
+ *
+ * @param a
+ * @param b
+ * @returns
+ *
+ * ## Usage
+ * ```ts
+ * gcd(1920, 1080); // 120
+ * gcd(2, 2); // 2
+ * ```
+ */
+const gcd = gcf;
+
+export { gcf, gcd };
