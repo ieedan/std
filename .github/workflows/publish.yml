@@ -14,13 +14,13 @@ jobs:
     build:
         runs-on: ubuntu-latest
         permissions:
-          # Required for pushing to the repository
-          contents: write
-          pull-requests: write
+            # Required for pushing to the repository
+            contents: write
+            pull-requests: write
         steps:
             - uses: actions/checkout@v4
               with:
-                fetch-depth: 0
+                  fetch-depth: 0
             - uses: pnpm/action-setup@v4
             - uses: actions/setup-node@v4
               with:
@@ -31,15 +31,19 @@ jobs:
 
             - name: Build jsrepo-manifest.json
               run: pnpm build
-            
-            - name: Commit to main
-              if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-              run: |
-                git config --local user.email "github-actions[bot]@users.noreply.github.com"
-                git config --local user.name "github-actions[bot]"
-                git add .
-                git commit -m "chore: Update jsrepo-manifest.json" || exit 0
-                git push origin main
+
+            - name: Create pull request with changes
+              uses: peter-evans/create-pull-request@v7
+              with:
+                  title: "chore: update `jsrepo-manifest.json`"
+                  body: |
+                      - Update `jsrepo-manifest.json`'
+
+                      ---
+                      This PR was auto generated
+                  assignees: ieedan
+                  branch: build-manifest
+                  commit-message: build `jsrepo-manifest.json`
 
     release-please:
         needs: build
