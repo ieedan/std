@@ -40,7 +40,7 @@ jobs:
               with:
                   title: "chore: update `jsrepo-manifest.json`"
                   body: |
-                      - Update `jsrepo-manifest.json`'
+                      - Update `jsrepo-manifest.json`
 
                       ---
                       This PR was auto generated
