@@ -1,5 +1,7 @@
 # std
 
+![jsrepo](https://jsrepo.dev/badges/jsrepo.svg)
+
 Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 
 ```bash
