@@ -1,7 +1,7 @@
-import * as triangle from "./triangles";
-import type { Point } from "./types";
+import * as triangle from './triangles';
+import type { Point } from './types';
 
-/** Gets a point in reference to a grid with a coordinate system in line with the DOM. 
+/** Gets a point in reference to a grid with a coordinate system in line with the DOM.
  * You can use this to animate a point around a circle.
  *
  * **Example Grid:**
@@ -17,29 +17,29 @@ import type { Point } from "./types";
  * @param angle
  * @param radius
  * @returns
- * 
+ *
  * ```ts
  * // a program to move something around a circle
- * 
+ *
  * const radius = 24;
  * const speed = 0.05;
  * let angle = 0;
- * 
+ *
  * const update = () => {
  *    const cords = getPoint(angle, radius);
- * 
+ *
  *    move(cords); // update position
- * 
+ *
  *    // increase angle to move point around the circle
  *    if (angle >= 360) {
  *        angle = speed; // start at speed because 360 is the same as 0
  *    } else {
  *        angle += speed;
  *    }
- *  
+ *
  *    requestAnimationFrame(update)
  * }
- * 
+ *
  * update();
  * ```
  */
