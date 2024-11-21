@@ -1,4 +1,5 @@
-![jsrepo](https://jsrepo.dev/badges/jsrepo.svg)
+<!-- can't merge if it's not passing -->
+![jsrepo](https://jsrepo.dev/badges/build/passing.svg)
 
 # std
 
