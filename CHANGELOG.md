@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/ieedan/std/compare/v1.5.0...v1.6.0) (2024-11-21)
+
+
+### Features
+
+* Add `circle` to `utilities/math` ([b4c83e9](https://github.com/ieedan/std/commit/b4c83e93554bbbcc61b8a973f981a689ec26ded3))
+
 ## [1.5.0](https://github.com/ieedan/std/compare/v1.4.0...v1.5.0) (2024-11-20)
 
 
