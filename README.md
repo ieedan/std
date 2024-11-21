@@ -1,6 +1,6 @@
-# std
-
 ![jsrepo](https://jsrepo.dev/badges/jsrepo.svg)
+
+# std
 
 Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 
