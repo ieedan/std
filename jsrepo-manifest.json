@@ -102,6 +102,8 @@
 				"tests": true,
 				"subdirectory": true,
 				"files": [
+					"circle.test.ts",
+					"circle.ts",
 					"conversions.test.ts",
 					"conversions.ts",
 					"fractions.test.ts",
@@ -110,7 +112,8 @@
 					"gcf.ts",
 					"index.ts",
 					"triangles.test.ts",
-					"triangles.ts"
+					"triangles.ts",
+					"types.ts"
 				],
 				"localDependencies": [],
 				"dependencies": [],
