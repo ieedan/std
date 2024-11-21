@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/ieedan/std/compare/v1.6.0...v2.0.0) (2024-11-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename `utilities` -> `utils`
+
+### Miscellaneous Chores
+
+* rename `utilities` -&gt; `utils` ([6c9f418](https://github.com/ieedan/std/commit/6c9f418bb0cfa6602b63a459ae7285738d4823b6))
+
 ## [1.6.0](https://github.com/ieedan/std/compare/v1.5.0...v1.6.0) (2024-11-21)
 
 
