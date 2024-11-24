@@ -1,12 +1,12 @@
 <!-- can't merge if it's not passing -->
-![jsrepo](https://jsrepo.dev/badges/build/passing.svg)
+[![jsrepo](https://jsrepo.dev/badges/build/passing.svg)](https://jsrepo.dev)
 
 # std
 
 Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 
 ```bash
-npx jsrepo add github/ieedan/std/types/result
+npx jsrepo add --repo github/ieedan/std
 ```
 
 or
