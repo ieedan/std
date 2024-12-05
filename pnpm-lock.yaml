@@ -25,8 +25,8 @@ importers:
         specifier: ^2.1.5
         version: 2.1.5(vitest@2.1.5(@types/node@22.9.0))
       jsrepo:
-        specifier: ^1.15.0
-        version: 1.15.0(typescript@5.6.3)
+        specifier: ^1.17.1
+        version: 1.17.1(typescript@5.6.3)
       typedoc:
         specifier: ^0.26.11
         version: 0.26.11(typescript@5.6.3)
@@ -925,8 +925,8 @@ packages:
   json-schema-typed@8.0.1:
     resolution: {integrity: sha512-XQmWYj2Sm4kn4WeTYvmpKEbyPsL7nBsb647c7pMe6l02/yx2+Jfc4dT6UZkEXnIUb5LhD55r2HPsJ1milQ4rDg==}
 
-  jsrepo@1.15.0:
-    resolution: {integrity: sha512-jai0pWoaYordYnP1Ub9WBcmm5BLBDbMtaEQxN6iHLGhZiDSHt/+nrW9CiYtkIlP+sz1Iru66vQXsh5Y+oBSrRA==}
+  jsrepo@1.17.1:
+    resolution: {integrity: sha512-0zxiSpjRHbhrETsP8IdoPrXgF81tklzYwOqD4JDNbRDcuWsJHI8pJQrf/nrJ/49xLNPIsXybZBWcjFedrGvLjw==}
     hasBin: true
 
   linkify-it@5.0.0:
@@ -2210,7 +2210,7 @@ snapshots:
 
   json-schema-typed@8.0.1: {}
 
-  jsrepo@1.15.0(typescript@5.6.3):
+  jsrepo@1.17.1(typescript@5.6.3):
     dependencies:
       '@biomejs/js-api': 0.7.1(@biomejs/wasm-nodejs@1.9.4)
       '@biomejs/wasm-nodejs': 1.9.4

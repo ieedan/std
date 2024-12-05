@@ -30,7 +30,7 @@ jobs:
               run: pnpm install
 
             - name: Build jsrepo-manifest.json
-              run: pnpm build
+              run: pnpm build:registry
 
             - name: Format manifest
               run: pnpm format
@@ -42,8 +42,7 @@ jobs:
                   body: |
                       - Update `jsrepo-manifest.json`
 
-                      ---
-                      This PR was auto generated
+                      *This PR was auto generated*
                   assignees: ieedan
                   branch: build-manifest
                   commit-message: build `jsrepo-manifest.json`
