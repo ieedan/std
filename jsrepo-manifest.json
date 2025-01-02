@@ -158,6 +158,32 @@
 				"devDependencies": []
 			},
 			{
+				"name": "perishable-list",
+				"directory": "src/utils",
+				"category": "utils",
+				"tests": true,
+				"subdirectory": false,
+				"list": true,
+				"files": ["perishable-list.ts", "perishable-list.test.ts"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "rand",
+				"directory": "src/utils",
+				"category": "utils",
+				"tests": true,
+				"subdirectory": false,
+				"list": true,
+				"files": ["rand.ts", "rand.test.ts"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
 				"name": "sleep",
 				"directory": "src/utils",
 				"category": "utils",
