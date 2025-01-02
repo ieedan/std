@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.0](https://github.com/ieedan/std/compare/v2.0.0...v2.1.0) (2025-01-02)
+
+
+### Features
+
+* `PerishableList` ([f7d24d7](https://github.com/ieedan/std/commit/f7d24d79ca57d2cb5ba5fce1ab73a5dec79cf471))
+* `rand` block ([800d78c](https://github.com/ieedan/std/commit/800d78cf00942716dc8f9581ce8f7080329bf73f))
+* Refactor `dispatcher` and `stopwatch` to use classes ([737419d](https://github.com/ieedan/std/commit/737419d34ff9ddd5527f7af1406ad588c55a8b0d))
+
 ## [2.0.0](https://github.com/ieedan/std/compare/v1.6.0...v2.0.0) (2024-11-21)
 
 
