@@ -6,16 +6,18 @@
 
 Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 
-```bash
-npx jsrepo add --repo github/ieedan/std
-```
-
-or
+## Setup
 
 Add as a repo in config:
 
 ```bash
 npx jsrepo init --repos github/ieedan/std
+```
+
+then add your blocks:
+
+```bash
+npx jsrepo add types/result
 ```
 
 # Blocks
@@ -32,6 +34,8 @@ npx jsrepo init --repos github/ieedan/std
 | [utils/map-to-array](https://ieedan.github.io/std/functions/utils_map_to_array.mapToArray.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/math](https://ieedan.github.io/std/modules/utils_math.html)                              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/pad](https://ieedan.github.io/std/functions/utils_pad.leftPad.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/pad](https://ieedan.github.io/std/functions/utils_perishable_list.PerishableList.html)   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/rand](https://ieedan.github.io/std/functions/utils_rang.rand.html)                       | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/sleep](https://ieedan.github.io/std/functions/utils_sleep.sleep.html)                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/stopwatch](https://ieedan.github.io/std/types/utils_stopwatch.Stopwatch.html)            | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/strip-ansi](https://ieedan.github.io/std/functions/utils_strip_ansi.stripAsni.html)      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
