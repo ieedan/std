@@ -15,15 +15,15 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/node": "^22.9.0",
-		"@vitest/coverage-v8": "^2.1.5",
-		"jsrepo": "^1.17.1",
-		"typedoc": "^0.26.11",
-		"typescript": "^5.6.3",
-		"vitest": "^2.1.4"
+		"@types/node": "^22.10.3",
+		"@vitest/coverage-v8": "^2.1.8",
+		"jsrepo": "^1.23.2",
+		"typedoc": "^0.27.6",
+		"typescript": "^5.7.2",
+		"vitest": "^2.1.8"
 	},
 	"dependencies": {
 		"ansi-regex": "^6.1.0",
-		"typedoc-material-theme": "^1.1.0"
+		"typedoc-material-theme": "^1.2.0"
 	}
 }
