@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { newDispatcher } from './dispatcher';
+import { Dispatcher } from './dispatcher';
 
 describe('dispatcher', () => {
 	it('Listen then un-listen', () => {
-		const dispatcher = newDispatcher();
+		const dispatcher = new Dispatcher();
 
 		let count = 0;
 
@@ -23,7 +23,7 @@ describe('dispatcher', () => {
 	});
 
 	it('All listen then un-listen', () => {
-		const dispatcher = newDispatcher();
+		const dispatcher = new Dispatcher();
 
 		let count = 0;
 
@@ -46,7 +46,7 @@ describe('dispatcher', () => {
 	});
 
 	it('All listen then one un-listens', () => {
-		const dispatcher = newDispatcher();
+		const dispatcher = new Dispatcher();
 
 		let count = 0;
 
@@ -69,7 +69,7 @@ describe('dispatcher', () => {
 	});
 
 	it('All listeners receive params', () => {
-		const dispatcher = newDispatcher<{ currentCount: number }>();
+		const dispatcher = new Dispatcher<{ currentCount: number }>();
 
 		let count = 2;
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { stopwatch } from './stopwatch';
+import { StopWatch } from './stopwatch';
 
 // we add this here so that we have a 0 dependency test
 const sleep = async (durationMs: number): Promise<void> =>
@@ -7,7 +7,7 @@ const sleep = async (durationMs: number): Promise<void> =>
 
 describe('stopwatch', () => {
 	it('Correctly indicates the elapsed time', async () => {
-		const w = stopwatch();
+		const w = new StopWatch();
 
 		w.start();
 
@@ -17,13 +17,13 @@ describe('stopwatch', () => {
 	});
 
 	it('Will error if `elapsed` is called before `.start()`', async () => {
-		const w = stopwatch();
+		const w = new StopWatch();
 
 		expect(w.elapsed).toThrow();
 	});
 
 	it('Will reset when `.reset()` is called', async () => {
-		const w = stopwatch();
+		const w = new StopWatch();
 
 		w.start();
 

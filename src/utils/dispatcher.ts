@@ -5,9 +5,9 @@ export type ListenerCallback<T = undefined> = T extends undefined ? () => void :
  * ## Examples
  *
  * ```ts
- * import { newDispatcher } from "./src/blocks/dispatcher";
+ * import { Dispatcher } from "./src/blocks/dispatcher";
  *
- * const dispatcher = newDispatcher();
+ * const dispatcher = new Dispatcher();
  *
  * let count = 0;
  *
@@ -27,16 +27,19 @@ export type ListenerCallback<T = undefined> = T extends undefined ? () => void :
  * ### Typed Options
  *
  * ```ts
- * import { newDispatcher } from "./src/blocks/dispatcher";
+ * import { Dispatcher } from "./src/blocks/dispatcher";
  *
- * const dispatcher = newDispatcher<string>();
+ * const dispatcher = new Dispatcher<string>();
  *
  * dispatcher.addListener((name) => { console.log(`Hello ${name}!`) });
  *
  * dispatcher.emit("John"); // 'Hello John!'
  * ```
  */
-export type Dispatcher<T = undefined> = {
+export class Dispatcher<T> {
+	nextListenerId = -1;
+	private listeners = new Map<number, ListenerCallback<T>>();
+
 	/** Adds an event listener
 	 *
 	 * @param callback
@@ -48,7 +51,12 @@ export type Dispatcher<T = undefined> = {
 	 * const listenerId = dispatcher.addListener(() => { ... });
 	 * ```
 	 */
-	addListener: (callback: ListenerCallback<T>) => number;
+	addListener(callback: ListenerCallback<T>): number {
+		this.nextListenerId++;
+		this.listeners.set(this.nextListenerId, callback);
+		return this.nextListenerId;
+	}
+
 	/** Removes an event listener
 	 *
 	 * @param id
@@ -60,7 +68,10 @@ export type Dispatcher<T = undefined> = {
 	 * dispatcher.removeListener(listenerId);
 	 * ```
 	 */
-	removeListener: (id: number) => void;
+	removeListener(listenerId: number) {
+		this.listeners.delete(listenerId);
+	}
+
 	/** Emits an event to all listeners with the provided options.
 	 *
 	 * @param opts Options to be passed to the listener
@@ -70,10 +81,21 @@ export type Dispatcher<T = undefined> = {
 	 *
 	 * ```ts
 	 * dispatcher.emit();
+	 *
+	 * dispatcher.emit(opts);
 	 * ```
 	 *
 	 */
-	emit: T extends undefined ? () => void : (opts: T) => void;
+	emit(opts?: T) {
+		for (const [_, callback] of this.listeners) {
+			if (opts === undefined) {
+				(callback as ListenerCallback<undefined>)();
+			} else {
+				callback(opts);
+			}
+		}
+	}
+
 	/** Removes all event listeners from the dispatcher.
 	 *
 	 * @returns
@@ -84,44 +106,8 @@ export type Dispatcher<T = undefined> = {
 	 * dispatcher.removeAllListeners();
 	 * ```
 	 */
-	removeAllListeners: () => void;
-};
-
-/** Create a new dispatcher instance.
- *
- * @returns
- *
- * ## Usage
- *
- * ```ts
- * const dispatcher = newDispatcher();
- * ```
- */
-const newDispatcher = <T = undefined>(): Dispatcher<T> => {
-	let nextListenerId = 0;
-	const listeners = new Map<number, ListenerCallback<T>>();
-
-	return {
-		addListener: (callback) => {
-			nextListenerId++;
-			listeners.set(nextListenerId, callback);
-			return nextListenerId;
-		},
-		removeListener: (listenerId: number) => listeners.delete(listenerId),
-		emit: ((opts?: T) => {
-			for (const [_, callback] of listeners) {
-				if (opts === undefined) {
-					(callback as ListenerCallback<undefined>)();
-				} else {
-					callback(opts);
-				}
-			}
-		}) as Dispatcher<T>['emit'],
-		removeAllListeners: () => {
-			listeners.clear();
-			nextListenerId = 0;
-		},
-	};
-};
-
-export { newDispatcher };
+	removeAllListeners() {
+		this.listeners.clear();
+		this.nextListenerId = 0;
+	}
+}
