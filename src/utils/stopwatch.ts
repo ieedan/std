@@ -1,8 +1,6 @@
 /** Creates a new stopwatch instance.
  *
- * @returns
- *
- * # Usage
+ * ## Usage
  * ```ts
  * const w = new Stopwatch();
  *
@@ -21,7 +19,7 @@ export class StopWatch {
 	 *
 	 * @returns
 	 *
-	 * # Usage
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const w = stopwatch();
@@ -37,7 +35,7 @@ export class StopWatch {
 	 *
 	 * @returns
 	 *
-	 * # Usage
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const w = stopwatch();
@@ -61,7 +59,7 @@ export class StopWatch {
 	 *
 	 * @returns
 	 *
-	 * # Usage
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const w = watch();
@@ -94,7 +92,7 @@ export class StopWatch {
 	 *
 	 * @returns
 	 *
-	 * # Usage
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const w = stopwatch();
