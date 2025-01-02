@@ -1,11 +1,15 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { PerishableList } from './perishable-list';
 
-// we add this here so that we have a 0 dependency test
-const sleep = async (durationMs: number): Promise<void> =>
-	new Promise((res) => setTimeout(res, durationMs));
-
 describe('PerishableList', () => {
+	beforeEach(() => {
+		vi.useFakeTimers();
+	});
+
+	afterEach(() => {
+		vi.useRealTimers();
+	});
+
 	it('Adds items', async () => {
 		const list = new PerishableList<string>();
 
@@ -14,7 +18,7 @@ describe('PerishableList', () => {
 
 		expect(list.items).toStrictEqual(['Hello, World!', 'Hello, Everyone!']);
 
-		await sleep(200);
+		vi.advanceTimersByTime(200);
 
 		expect(list.items).toStrictEqual(['Hello, Everyone!']);
 	});

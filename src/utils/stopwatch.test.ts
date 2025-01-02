@@ -1,25 +1,43 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { StopWatch } from './stopwatch';
 
-// we add this here so that we have a 0 dependency test
-const sleep = async (durationMs: number): Promise<void> =>
-	new Promise((res) => setTimeout(res, durationMs));
-
 describe('stopwatch', () => {
+	beforeEach(() => {
+		vi.useFakeTimers();
+	});
+
+	afterEach(() => {
+		vi.useRealTimers();
+	});
+
 	it('Correctly indicates the elapsed time', async () => {
 		const w = new StopWatch();
 
 		w.start();
 
-		await sleep(50);
+		vi.advanceTimersByTime(50);
 
-		expect(w.elapsed()).toBeGreaterThanOrEqual(25);
+		expect(w.elapsed()).toEqual(50);
+	});
+
+	it('Correctly indicates the elapsed time', async () => {
+		const w = new StopWatch();
+
+		w.start();
+
+		vi.advanceTimersByTime(50);
+
+		w.stop();
+
+		vi.advanceTimersByTime(150);
+
+		expect(w.elapsed()).toEqual(50);
 	});
 
 	it('Will error if `elapsed` is called before `.start()`', async () => {
 		const w = new StopWatch();
 
-		expect(w.elapsed).toThrow();
+		expect(() => w.elapsed()).toThrow();
 	});
 
 	it('Will reset when `.reset()` is called', async () => {
@@ -33,6 +51,6 @@ describe('stopwatch', () => {
 
 		w.reset();
 
-		expect(w.elapsed).toThrow();
+		expect(() => w.elapsed()).toThrow();
 	});
 });
