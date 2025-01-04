@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ieedan/std/compare/v2.1.0...v2.2.0) (2025-01-04)
+
+
+### Features
+
+* Add `centerPad` function to `utils/pad` ([d1e3738](https://github.com/ieedan/std/commit/d1e37388f1c827b6e4df15bab59d68226a95e500))
+
 ## [2.1.0](https://github.com/ieedan/std/compare/v2.0.0...v2.1.0) (2025-01-02)
 
 
