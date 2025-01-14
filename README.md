@@ -11,7 +11,7 @@ Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
 Add as a repo in config:
 
 ```bash
-npx jsrepo init --repos github/ieedan/std
+npx jsrepo init github/ieedan/std
 ```
 
 then add your blocks:
