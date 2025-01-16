@@ -2,7 +2,7 @@
  *
  * ## Usage
  * ```ts
- * const url = join('https://example.com', 'api/', '/examples/');
+ * const url = join('https://example.com', '', 'api/', '/examples/');
  *
  * console.log(url); // https://example.com/api/examples
  * ```
