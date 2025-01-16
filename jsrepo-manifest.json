@@ -234,6 +234,19 @@
 				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
+			},
+			{
+				"name": "url",
+				"directory": "src/utils",
+				"category": "utils",
+				"tests": true,
+				"subdirectory": false,
+				"list": true,
+				"files": ["url.ts", "url.test.ts"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": []
 			}
 		]
 	}
