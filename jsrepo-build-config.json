@@ -1,5 +1,5 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.16.2/schemas/project-config.json",
+	"$schema": "https://unpkg.com/jsrepo@1.26.3/schemas/project-config.json",
 	"dirs": ["./src"],
 	"includeBlocks": [],
 	"includeCategories": [],

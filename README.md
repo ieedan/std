@@ -40,3 +40,4 @@ npx jsrepo add types/result
 | [utils/stopwatch](https://ieedan.github.io/std/types/utils_stopwatch.Stopwatch.html)                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/strip-ansi](https://ieedan.github.io/std/functions/utils_strip_ansi.stripAsni.html)              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/truncate](https://ieedan.github.io/std/functions/utils_truncate.truncate.html)                   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/url](https://ieedan.github.io/std/functions/utils_url.join.html)                                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
