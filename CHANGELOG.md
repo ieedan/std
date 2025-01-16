@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/ieedan/std/compare/v2.2.0...v2.3.0) (2025-01-16)
+
+
+### Features
+
+* Add `utils/url` block ([df707dc](https://github.com/ieedan/std/commit/df707dcf70bc80c07fc264e05ea3dd547c6ab062))
+
 ## [2.2.0](https://github.com/ieedan/std/compare/v2.1.0...v2.2.0) (2025-01-04)
 
 
