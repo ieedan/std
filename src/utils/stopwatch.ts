@@ -28,7 +28,7 @@ export class StopWatch {
 	 * ```
 	 */
 	start() {
-		this.startedAt = Date.now();
+		this.startedAt = performance.now();
 	}
 
 	/** Stop the stopwatch.
@@ -52,7 +52,7 @@ export class StopWatch {
 	 * ```
 	 */
 	stop() {
-		this.endedAt = Date.now();
+		this.endedAt = performance.now();
 	}
 
 	/** Tries to get the elapsed ms. Throws if the Stopwatch has not been started.
@@ -82,7 +82,7 @@ export class StopWatch {
 
 		// if the user hasn't called stop just give them the current time
 		if (!tempEndedAt) {
-			tempEndedAt = Date.now();
+			tempEndedAt = performance.now();
 		}
 
 		return tempEndedAt - this.startedAt;
