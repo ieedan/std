@@ -37,7 +37,7 @@ jsrepo add types/result
 | [utils/perishable-list](https://ieedan.github.io/std/classes/utils_perishable-list.PerishableList.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/rand](https://ieedan.github.io/std/functions/utils_rand.rand.html)                               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/sleep](https://ieedan.github.io/std/functions/utils_sleep.sleep.html)                            | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [utils/stopwatch](https://ieedan.github.io/std/classes/utils_stopwatch.Stopwatch.html)                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/stopwatch](https://ieedan.github.io/std/classes/utils_stopwatch.StopWatch.html)                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/strip-ansi](https://ieedan.github.io/std/functions/utils_strip-ansi.stripAsni.html)              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/time](https://ieedan.github.io/std/functions/utils_time.formatDuration.html)                     | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/truncate](https://ieedan.github.io/std/functions/utils_truncate.truncate.html)                   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
