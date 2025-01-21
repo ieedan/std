@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/ieedan/std/compare/v2.3.0...v2.4.0) (2025-01-21)
+
+
+### Features
+
+* `utils/time` block ([4c88419](https://github.com/ieedan/std/commit/4c88419a82d8b3ae702e352fbb7293291d17085d))
+
 ## [2.3.0](https://github.com/ieedan/std/compare/v2.2.0...v2.3.0) (2025-01-16)
 
 
