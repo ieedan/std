@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { DAY, formatDuration, HOUR, MINUTE, SECOND } from './time';
+import { DAY, HOUR, MINUTE, SECOND, formatDuration } from './time';
 
 describe('formatDuration', () => {
 	it('correctly formats durations', () => {
