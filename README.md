@@ -4,20 +4,20 @@
 
 # std
 
-Types and utility functions brokered with [jsrepo](https://jsrepo.dev).
+Types and utility functions brokered with [jsrepo](https://jsrepo.dev). If I have wrote it twice it's probably here.
 
 ## Setup
 
 Add as a repo in config:
 
 ```bash
-npx jsrepo init github/ieedan/std
+jsrepo init github/ieedan/std
 ```
 
 then add your blocks:
 
 ```bash
-npx jsrepo add types/result
+jsrepo add types/result
 ```
 
 # Blocks
