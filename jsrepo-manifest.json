@@ -223,6 +223,19 @@
 				"devDependencies": []
 			},
 			{
+				"name": "time",
+				"directory": "src/utils",
+				"category": "utils",
+				"tests": true,
+				"subdirectory": false,
+				"list": true,
+				"files": ["time.ts", "time.test.ts"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
 				"name": "truncate",
 				"directory": "src/utils",
 				"category": "utils",
