@@ -136,6 +136,25 @@ const addTrailingSlash = (segment: string): string => {
 	return newSegment;
 };
 
+/** Removes the last segment of the url.
+ *
+ * ## Usage
+ * ```ts
+ * const url = upOneLevel('/first/second');
+ *
+ * console.log(url); // '/first'
+ * ```
+ *
+ * @param url
+ */
+const upOneLevel = (url: string): string => {
+	if (url === '/') return url;
+
+	const lastIndex = removeTrailingSlash(url).lastIndexOf('/');
+
+	return url.slice(0, url.length - lastIndex - 1);
+};
+
 export {
 	join,
 	removeLeadingSlash,
@@ -144,4 +163,5 @@ export {
 	addLeadingSlash,
 	addLeadingAndTrailingSlash,
 	removeLeadingAndTrailingSlash,
+	upOneLevel,
 };

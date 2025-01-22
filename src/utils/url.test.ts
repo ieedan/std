@@ -110,3 +110,13 @@ describe('addTrailingSlash', () => {
 		expect(url.addTrailingSlash('')).toBe('/');
 	});
 });
+
+describe('upOneLevel', () => {
+	it('removes the last segment', () => {
+		expect(url.upOneLevel('/first/second')).toBe('/first');
+	});
+
+	it('will not go up from root', () => {
+		expect(url.upOneLevel('/')).toBe('/');
+	});
+});
