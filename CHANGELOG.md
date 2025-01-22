@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/ieedan/std/compare/v2.4.0...v2.5.0) (2025-01-22)
+
+
+### Features
+
+* add `upOneLevel` to `utils/url` ([3395ebb](https://github.com/ieedan/std/commit/3395ebb87da3a92ce5c1208046de66e3f91e411d))
+
 ## [2.4.0](https://github.com/ieedan/std/compare/v2.3.0...v2.4.0) (2025-01-21)
 
 
