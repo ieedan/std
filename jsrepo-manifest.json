@@ -1,6 +1,5 @@
 {
 	"meta": {
-		"builtAt": 1738594692013,
 		"authors": ["Aidan Bleser"],
 		"bugs": "https://github.com/ieedan/std/issues",
 		"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
