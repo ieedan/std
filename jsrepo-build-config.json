@@ -1,5 +1,13 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.27.0/schemas/registry-config.json",
+	"$schema": "https://unpkg.com/jsrepo@1.30.0/schemas/registry-config.json",
+	"meta": {
+		"authors": ["Aidan Bleser"],
+		"bugs": "https://github.com/ieedan/std/issues",
+		"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
+		"homepage": "https://ieedan.github.io/std/",
+		"repository": "https://github.com/ieedan/std",
+		"tags": ["typescript", "std", "utilities"]
+	},
 	"dirs": ["./src"],
 	"includeBlocks": [],
 	"includeCategories": [],
