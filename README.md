@@ -27,10 +27,10 @@ jsrepo add types/result
 | [types/result](https://ieedan.github.io/std/classes/types_result.Result.html)                           | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/array-sum](https://ieedan.github.io/std/functions/utils_array-sum.arraySum.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/array-to-map](https://ieedan.github.io/std/functions/utils_array-to-map.arrayToMap.html)         | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [utils/casing](https://ieedan.github.io/std/functions/utils_casing.html)                                | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/casing](https://ieedan.github.io/std/modules/utils_casing.html)                                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/dispatcher](https://ieedan.github.io/std/classes/utils_dispatcher.Dispatcher.html)               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/ipv4-address](https://ieedan.github.io/std/modules/utils_ipv4-address.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [utils/is-letter](https://ieedan.github.io/std/modules/utils_is-letter.isLetter.html)                   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [utils/is-letter](https://ieedan.github.io/std/functions/utils_is-letter.isLetter.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/is-number](https://ieedan.github.io/std/functions/utils_is-number.isNumber.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/lines](https://ieedan.github.io/std/modules/utils_lines.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [utils/map-to-array](https://ieedan.github.io/std/functions/utils_map-to-array.mapToArray.html)         | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
