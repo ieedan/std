@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/ieedan/std/compare/v2.5.0...v2.6.0) (2025-02-05)
+
+
+### Features
+
+* Add `casing` and `is-letter` blocks ([842f37d](https://github.com/ieedan/std/commit/842f37d04f2792a068343cbf7b8ad0e663310bc8))
+
 ## [2.5.0](https://github.com/ieedan/std/compare/v2.4.0...v2.5.0) (2025-01-22)
 
 
