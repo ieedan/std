@@ -56,6 +56,21 @@
 					"devDependencies": []
 				},
 				{
+					"name": "casing",
+					"directory": "src/utils",
+					"category": "utils",
+					"tests": true,
+					"subdirectory": false,
+					"list": true,
+					"files": ["casing.ts", "casing.test.ts"],
+					"localDependencies": ["utils/is-letter"],
+					"_imports_": {
+						"./is-letter": "{{utils/is-letter}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
 					"name": "dispatcher",
 					"directory": "src/utils",
 					"category": "utils",
@@ -81,6 +96,19 @@
 						"../types/result": "{{types/result}}",
 						"./is-number": "{{utils/is-number}}"
 					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "is-letter",
+					"directory": "src/utils",
+					"category": "utils",
+					"tests": true,
+					"subdirectory": false,
+					"list": true,
+					"files": ["is-letter.ts", "is-letter.test.ts"],
+					"localDependencies": [],
+					"_imports_": {},
 					"dependencies": [],
 					"devDependencies": []
 				},
