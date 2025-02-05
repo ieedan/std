@@ -10,7 +10,7 @@
 		"attributePosition": "auto"
 	},
 	"files": {
-		"ignore": ["dist", "node_modules", "docs", "blocks-manifest.json"]
+		"ignore": ["dist", "node_modules", "docs", "blocks-manifest.json", "coverage"]
 	},
 	"organizeImports": { "enabled": true },
 	"linter": {
@@ -52,6 +52,7 @@
 			},
 			"style": { "noNamespace": "error", "useAsConstAssertion": "error" },
 			"suspicious": {
+				"noConsoleLog": "error",
 				"noAsyncPromiseExecutor": "error",
 				"noCatchAssign": "error",
 				"noClassAssign": "error",
