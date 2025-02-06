@@ -1,4 +1,4 @@
-import { Err, Ok, type Result } from '../types/result';
+import { Err, Ok, type Result } from './result';
 import { isNumber } from './is-number';
 
 type Octets = [number, number, number, number];
