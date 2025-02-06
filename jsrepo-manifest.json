@@ -9,47 +9,16 @@
 	},
 	"categories": [
 		{
-			"name": "types",
+			"name": "ts",
 			"blocks": [
 				{
-					"name": "result",
-					"directory": "src/types",
-					"category": "types",
+					"name": "array",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
-					"files": ["result.ts", "result.test.ts"],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [],
-					"devDependencies": []
-				}
-			]
-		},
-		{
-			"name": "utils",
-			"blocks": [
-				{
-					"name": "array-sum",
-					"directory": "src/utils",
-					"category": "utils",
-					"tests": true,
-					"subdirectory": false,
-					"list": true,
-					"files": ["array-sum.ts", "array-sum.test.ts"],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"name": "array-to-map",
-					"directory": "src/utils",
-					"category": "utils",
-					"tests": true,
-					"subdirectory": false,
-					"list": true,
-					"files": ["array-to-map.ts", "array-to-map.test.ts"],
+					"files": ["array.ts", "array.test.ts"],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -57,23 +26,23 @@
 				},
 				{
 					"name": "casing",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
 					"files": ["casing.ts", "casing.test.ts"],
-					"localDependencies": ["utils/is-letter"],
+					"localDependencies": ["ts/is-letter"],
 					"_imports_": {
-						"./is-letter": "{{utils/is-letter}}"
+						"./is-letter": "{{ts/is-letter}}"
 					},
 					"dependencies": [],
 					"devDependencies": []
 				},
 				{
 					"name": "dispatcher",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -85,24 +54,24 @@
 				},
 				{
 					"name": "ipv4-address",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
 					"files": ["ipv4-address.ts", "ipv4-address.test.ts"],
-					"localDependencies": ["types/result", "utils/is-number"],
+					"localDependencies": ["ts/is-number", "ts/result"],
 					"_imports_": {
-						"../types/result": "{{types/result}}",
-						"./is-number": "{{utils/is-number}}"
+						"./is-number": "{{ts/is-number}}",
+						"./result": "{{ts/result}}"
 					},
 					"dependencies": [],
 					"devDependencies": []
 				},
 				{
 					"name": "is-letter",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -114,8 +83,8 @@
 				},
 				{
 					"name": "is-number",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -127,36 +96,23 @@
 				},
 				{
 					"name": "lines",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
 					"files": ["lines.ts", "lines.test.ts"],
-					"localDependencies": ["utils/pad"],
+					"localDependencies": ["ts/pad"],
 					"_imports_": {
-						"./pad": "{{utils/pad}}"
+						"./pad": "{{ts/pad}}"
 					},
 					"dependencies": [],
 					"devDependencies": []
 				},
 				{
-					"name": "map-to-array",
-					"directory": "src/utils",
-					"category": "utils",
-					"tests": true,
-					"subdirectory": false,
-					"list": true,
-					"files": ["map-to-array.ts", "map-to-array.test.ts"],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [],
-					"devDependencies": []
-				},
-				{
 					"name": "math",
-					"directory": "src/utils/math",
-					"category": "utils",
+					"directory": "src/ts/math",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": true,
 					"list": true,
@@ -181,23 +137,23 @@
 				},
 				{
 					"name": "pad",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
 					"files": ["pad.ts", "pad.test.ts"],
-					"localDependencies": ["utils/strip-ansi"],
+					"localDependencies": ["ts/strip-ansi"],
 					"_imports_": {
-						"./strip-ansi": "{{utils/strip-ansi}}"
+						"./strip-ansi": "{{ts/strip-ansi}}"
 					},
 					"dependencies": [],
 					"devDependencies": []
 				},
 				{
 					"name": "perishable-list",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -209,8 +165,8 @@
 				},
 				{
 					"name": "rand",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -221,9 +177,22 @@
 					"devDependencies": []
 				},
 				{
+					"name": "result",
+					"directory": "src/ts",
+					"category": "ts",
+					"tests": true,
+					"subdirectory": false,
+					"list": true,
+					"files": ["result.ts", "result.test.ts"],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
 					"name": "sleep",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -235,8 +204,8 @@
 				},
 				{
 					"name": "stopwatch",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -248,8 +217,8 @@
 				},
 				{
 					"name": "strip-ansi",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -261,8 +230,8 @@
 				},
 				{
 					"name": "time",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -274,8 +243,8 @@
 				},
 				{
 					"name": "truncate",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
@@ -287,8 +256,8 @@
 				},
 				{
 					"name": "url",
-					"directory": "src/utils",
-					"category": "utils",
+					"directory": "src/ts",
+					"category": "ts",
 					"tests": true,
 					"subdirectory": false,
 					"list": true,
