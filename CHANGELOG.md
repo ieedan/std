@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.0](https://github.com/ieedan/std/compare/v2.6.0...v3.0.0) (2025-02-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Consolidate array methods into `ts/array` block
+* BREAKING move all code to `ts` category
+
+### Features
+
+* BREAKING move all code to `ts` category ([85e1113](https://github.com/ieedan/std/commit/85e111350d4fa8fe9f28df85d0e6a5ea97b834da))
+* Consolidate array methods into `ts/array` block ([1c3a60c](https://github.com/ieedan/std/commit/1c3a60c9fba14b1b20ea80604c8475c3e1ca02b9))
+
 ## [2.6.0](https://github.com/ieedan/std/compare/v2.5.0...v2.6.0) (2025-02-05)
 
 
