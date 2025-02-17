@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/ieedan/std/compare/v3.0.0...v3.1.0) (2025-02-17)
+
+
+### Features
+
+* add `ts/strings` ([1ab4f45](https://github.com/ieedan/std/commit/1ab4f450f30d5571c7fe8572fad47086128a24f9))
+
 ## [3.0.0](https://github.com/ieedan/std/compare/v2.6.0...v3.0.0) (2025-02-06)
 
 
