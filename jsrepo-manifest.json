@@ -216,6 +216,19 @@
 					"devDependencies": []
 				},
 				{
+					"name": "strings",
+					"directory": "src/ts",
+					"category": "ts",
+					"tests": true,
+					"subdirectory": false,
+					"list": true,
+					"files": ["strings.ts", "strings.test.ts"],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
 					"name": "strip-ansi",
 					"directory": "src/ts",
 					"category": "ts",
