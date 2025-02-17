@@ -38,6 +38,7 @@ jsrepo add ts/result
 | [ts/rand](https://ieedan.github.io/std/functions/ts_rand.rand.html)                               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/sleep](https://ieedan.github.io/std/functions/ts_sleep.sleep.html)                            | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/stopwatch](https://ieedan.github.io/std/classes/ts_stopwatch.StopWatch.html)                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/strings](https://ieedan.github.io/std/modules/ts_strings.html)                                | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/strip-ansi](https://ieedan.github.io/std/functions/ts_strip-ansi.stripAsni.html)              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/time](https://ieedan.github.io/std/functions/ts_time.formatDuration.html)                     | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/truncate](https://ieedan.github.io/std/functions/ts_truncate.truncate.html)                   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
