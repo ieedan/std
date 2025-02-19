@@ -1,6 +1,6 @@
+import { stripVTControlCharacters as stripAsni } from 'node:util';
 import { describe, expect, it } from 'vitest';
 import { centerPad, leftPad, leftPadMin, rightPad, rightPadMin } from './pad';
-import { stripAsni } from './strip-ansi';
 
 describe('leftPad', () => {
 	it('Correctly pads', () => {

@@ -1,4 +1,4 @@
-import { stripAsni } from './strip-ansi';
+import { stripVTControlCharacters as stripAsni } from 'node:util';
 
 /** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
  *
