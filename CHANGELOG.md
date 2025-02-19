@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/ieedan/std/compare/v3.1.0...v4.0.0) (2025-02-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `strip-ansi` in favor of `node:util` implementation
+
+### Features
+
+* Remove `strip-ansi` in favor of `node:util` implementation ([d18e939](https://github.com/ieedan/std/commit/d18e939ba81be0a3f54382a31cca748f03d81b03))
+
 ## [3.1.0](https://github.com/ieedan/std/compare/v3.0.0...v3.1.0) (2025-02-17)
 
 
