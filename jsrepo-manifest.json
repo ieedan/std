@@ -143,10 +143,8 @@
 					"subdirectory": false,
 					"list": true,
 					"files": ["pad.ts", "pad.test.ts"],
-					"localDependencies": ["ts/strip-ansi"],
-					"_imports_": {
-						"./strip-ansi": "{{ts/strip-ansi}}"
-					},
+					"localDependencies": [],
+					"_imports_": {},
 					"dependencies": [],
 					"devDependencies": []
 				},
@@ -226,19 +224,6 @@
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"name": "strip-ansi",
-					"directory": "src/ts",
-					"category": "ts",
-					"tests": true,
-					"subdirectory": false,
-					"list": true,
-					"files": ["strip-ansi.ts", "strip-ansi.test.ts"],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": ["ansi-regex@^6.1.0"],
 					"devDependencies": []
 				},
 				{
