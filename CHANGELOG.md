@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/ieedan/std/compare/v4.0.0...v4.1.0) (2025-02-22)
+
+
+### Features
+
+* Add `ts/promises` ([ad73886](https://github.com/ieedan/std/commit/ad73886214989a896991345562b4bc151972429f))
+
 ## [4.0.0](https://github.com/ieedan/std/compare/v3.1.0...v4.0.0) (2025-02-19)
 
 
