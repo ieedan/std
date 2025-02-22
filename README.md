@@ -35,6 +35,7 @@ jsrepo add ts/result
 | [ts/math](https://ieedan.github.io/std/modules/ts_math.html)                                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/pad](https://ieedan.github.io/std/functions/ts_pad.leftPad.html)                              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/perishable-list](https://ieedan.github.io/std/classes/ts_perishable-list.PerishableList.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/promises](https://ieedan.github.io/std/modules/ts_promises.html)                              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/rand](https://ieedan.github.io/std/functions/ts_rand.rand.html)                               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/sleep](https://ieedan.github.io/std/functions/ts_sleep.sleep.html)                            | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/stopwatch](https://ieedan.github.io/std/classes/ts_stopwatch.StopWatch.html)                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
