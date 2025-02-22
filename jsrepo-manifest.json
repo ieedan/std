@@ -162,6 +162,19 @@
 					"devDependencies": []
 				},
 				{
+					"name": "promises",
+					"directory": "src/ts",
+					"category": "ts",
+					"tests": true,
+					"subdirectory": false,
+					"list": true,
+					"files": ["promises.ts", "promises.test.ts"],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
 					"name": "rand",
 					"directory": "src/ts",
 					"category": "ts",
