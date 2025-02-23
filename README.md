@@ -24,11 +24,11 @@ jsrepo add ts/result
 
 | Block                                                                                             | Status                                                                                           |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [ts/result](https://ieedan.github.io/std/classes/ts_result.Result.html)                           | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [ts/array](https://ieedan.github.io/std/modules/ts_array.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [ts/casing](https://ieedan.github.io/std/modules/ts_casing.html)                                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [ts/dispatcher](https://ieedan.github.io/std/classes/ts_dispatcher.Dispatcher.html)               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [ts/ipv4-address](https://ieedan.github.io/std/modules/ts_ipv4-address.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/result](https://ieedan.github.io/std/classes/result.Result.html)                           | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/array](https://ieedan.github.io/std/modules/array.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/casing](https://ieedan.github.io/std/modules/casing.html)                                  | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/dispatcher](https://ieedan.github.io/std/classes/dispatcher.Dispatcher.html)               | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/ipv4-address](https://ieedan.github.io/std/modules/ipv4-address.html)                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/is-letter](https://ieedan.github.io/std/functions/ts_is-letter.isLetter.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/is-number](https://ieedan.github.io/std/functions/ts_is-number.isNumber.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/lines](https://ieedan.github.io/std/modules/ts_lines.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
