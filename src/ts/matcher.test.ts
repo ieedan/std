@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Matcher, type Matchable } from './matcher';
+import { type Matchable, Matcher } from './matcher';
 
 describe('Matcher.select', () => {
 	it('Selects the correct member', () => {
