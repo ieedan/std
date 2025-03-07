@@ -11,7 +11,7 @@ describe('noopPromise', () => {
 	});
 
 	it('Returns a promise that resolves immediately', async () => {
-		const promise = promises.noopPromise(42);
+		const promise = promises.immediate(42);
 
 		const start = Date.now();
 

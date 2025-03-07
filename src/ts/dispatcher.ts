@@ -2,7 +2,7 @@ export type ListenerCallback<T = undefined> = T extends undefined ? () => void :
 
 /** Simplifies adding event listeners to your code.
  *
- * ## Examples
+ * ## Usage
  *
  * ```ts
  * import { Dispatcher } from "./src/blocks/dispatcher";

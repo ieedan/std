@@ -110,6 +110,19 @@
 					"devDependencies": []
 				},
 				{
+					"name": "matcher",
+					"directory": "src/ts",
+					"category": "ts",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": ["matcher.ts"],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
 					"name": "math",
 					"directory": "src/ts/math",
 					"category": "ts",

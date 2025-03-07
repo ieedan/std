@@ -43,7 +43,7 @@ import type { Point } from './types';
  * update();
  * ```
  */
-const getPoint = (angle: number, radius: number): Point => {
+export function getPoint(angle: number, radius: number): Point {
 	if (angle > 0 && angle < 90) {
 		const deg = angle;
 		const { opposite, adjacent } = triangle.right.solve({ angle: deg, hypotenuse: radius });
@@ -86,6 +86,4 @@ const getPoint = (angle: number, radius: number): Point => {
 
 	// must be 0degrees
 	return { x: radius, y: 0 };
-};
-
-export { getPoint };
+}

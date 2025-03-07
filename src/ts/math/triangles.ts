@@ -36,7 +36,7 @@ export type SolveOptions =
  * @param param0
  * @returns
  */
-const solveRight = ({ angle, opposite, adjacent, hypotenuse }: SolveOptions): RightTriangle => {
+function solveRight({ angle, opposite, adjacent, hypotenuse }: SolveOptions): RightTriangle {
 	if (angle <= 0) throw new Error(`Invalid value (${angle}) for 'angle'`);
 
 	if (typeof hypotenuse === 'number') {
@@ -60,43 +60,43 @@ const solveRight = ({ angle, opposite, adjacent, hypotenuse }: SolveOptions): Ri
 		adjacent,
 		hypotenuse,
 	};
-};
+}
 
 type OppositeSolveOptions =
 	| { angle: number; adjacent: number; hypotenuse?: never }
 	| { angle: number; adjacent?: never; hypotenuse: number };
 
-const solveForOpposite = ({ angle, adjacent, hypotenuse }: OppositeSolveOptions): number => {
+function solveForOpposite({ angle, adjacent, hypotenuse }: OppositeSolveOptions): number {
 	if (typeof hypotenuse === 'number') {
 		return Math.sin(dtr(angle)) * hypotenuse;
 	}
 
 	return Math.tan(dtr(angle)) * adjacent;
-};
+}
 
 type AdjacentSolveOptions =
 	| { angle: number; opposite: number; hypotenuse?: never }
 	| { angle: number; opposite?: never; hypotenuse: number };
 
-const solveForAdjacent = ({ angle, opposite, hypotenuse }: AdjacentSolveOptions): number => {
+function solveForAdjacent({ angle, opposite, hypotenuse }: AdjacentSolveOptions): number {
 	if (typeof opposite === 'number') {
 		return opposite / Math.tan(dtr(angle));
 	}
 
 	return hypotenuse * Math.cos(dtr(angle));
-};
+}
 
 type HypotenuseSolveOptions =
 	| { angle: number; opposite: number; adjacent?: never }
 	| { angle: number; opposite?: never; adjacent: number };
 
-const solveForHypotenuse = ({ angle, opposite, adjacent }: HypotenuseSolveOptions): number => {
+function solveForHypotenuse({ angle, opposite, adjacent }: HypotenuseSolveOptions): number {
 	if (typeof opposite === 'number') {
 		return opposite / Math.sin(dtr(angle));
 	}
 
 	return adjacent / Math.cos(dtr(angle));
-};
+}
 
 /** Functions for working with right triangles */
 const right = { solve: solveRight };

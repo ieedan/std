@@ -1,15 +1,15 @@
 import { isNumber } from './is-number';
 import { Err, Ok, type Result } from './result';
 
-type Octets = [number, number, number, number];
+export type Octets = [number, number, number, number];
 
-type IPv4Address =
+export type IPv4Address =
 	| Octets
 	| `${number}.${number}.${number}.${number}`
 	| `${number} ${number} ${number} ${number}`
 	| `${number}_${number}_${number}_${number}`;
 
-type ParseError = {
+export type ParseError = {
 	octet?: number;
 	message: string;
 };
@@ -25,7 +25,7 @@ type ParseError = {
  * parse("192.168.100.10").unwrap(); // [192, 168, 100, 10]
  * ```
  */
-const parse = (address: string): Result<Octets, ParseError> => {
+export function parse(address: string): Result<Octets, ParseError> {
 	let newAddress = address.trim();
 
 	newAddress = newAddress.replaceAll(' ', '.');
@@ -52,7 +52,7 @@ const parse = (address: string): Result<Octets, ParseError> => {
 	}
 
 	return Ok(final);
-};
+}
 
 /** Validates the provided address
  *
@@ -69,7 +69,7 @@ const parse = (address: string): Result<Octets, ParseError> => {
  * validate([192, 168, 100, 256]); // false
  * ```
  */
-const validate = (address: IPv4Address): boolean => {
+export function validate(address: IPv4Address): boolean {
 	if (typeof address === 'string') return parse(address).isOk();
 
 	for (let i = 0; i < address.length; i++) {
@@ -79,7 +79,7 @@ const validate = (address: IPv4Address): boolean => {
 	}
 
 	return true;
-};
+}
 
 /** Formats the provided address to a string with the provided separator
  *
@@ -93,10 +93,10 @@ const validate = (address: IPv4Address): boolean => {
  * formatToString([192, 168, 100, 10]); // "192.168.100.10"
  * ```
  */
-const formatToString = (
+export function formatToString(
 	address: IPv4Address,
 	separator: '.' | '_' | ' ' = '.'
-): Result<string, string> => {
+): Result<string, string> {
 	if (Array.isArray(address)) return Ok(address.join(separator));
 
 	const parsed = parse(address);
@@ -104,6 +104,4 @@ const formatToString = (
 	if (parsed.isErr()) return Err(parsed.unwrapErr().message);
 
 	return formatToString(parsed.unwrap(), separator);
-};
-
-export { parse, validate, formatToString };
+}

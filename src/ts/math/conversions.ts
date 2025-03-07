@@ -8,7 +8,9 @@
  * dtr(180); // 3.14159268358979
  * ```
  */
-const dtr = (degrees: number): number => degrees * (Math.PI / 180);
+export function dtr(degrees: number): number {
+	return degrees * (Math.PI / 180);
+}
 
 /** Converts radians to degrees
  *
@@ -20,6 +22,6 @@ const dtr = (degrees: number): number => degrees * (Math.PI / 180);
  * rtd(Math.PI); // 180
  * ```
  */
-const rtd = (radians: number): number => radians * (180 / Math.PI);
-
-export { dtr, rtd };
+export function rtd(radians: number): number {
+	return radians * (180 / Math.PI);
+}
