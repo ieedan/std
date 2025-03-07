@@ -5,7 +5,6 @@
 
 ### Features
 
-* Add `ts/matcher` ([d22fad2](https://github.com/ieedan/std/commit/d22fad22b023d28ceac8d0983bd972d2240810c2))
 * Add `ts/matcher` + make the change to function expressions ([f5f0be9](https://github.com/ieedan/std/commit/f5f0be9afbfb8c17a13c2d86d29a6d4d8c573917))
 * Change to use function expressions instead of arrow functions ([daa7d76](https://github.com/ieedan/std/commit/daa7d76704437b3ea2bc5c67b28d9f912fef6957))
 
