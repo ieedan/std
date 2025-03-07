@@ -9,6 +9,10 @@ export const DAY = HOUR * 24;
 
 /** Formats a time given in milliseconds with units.
  *
+ * @param durationMs Time to be formatted in milliseconds
+ * @param transform Runs before the num is formatted perfect place to put a `.toFixed()`
+ * @returns
+ *
  * ## Usage
  * ```ts
  * formatDuration(500); // 500ms
@@ -16,10 +20,6 @@ export const DAY = HOUR * 24;
  * formatDuration(MINUTE); // 1min
  * formatDuration(HOUR); // 1h
  * ```
- *
- * @param durationMs Time to be formatted in milliseconds
- * @param transform Runs before the num is formatted perfect place to put a `.toFixed()`
- * @returns
  */
 const formatDuration = (
 	durationMs: number,

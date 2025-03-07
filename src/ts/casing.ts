@@ -2,13 +2,13 @@ import { isLetter } from './is-letter';
 
 /** Converts a `camelCase` string to a `snake_case` string
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToSnake('helloWorld'); // hello_world
  * ```
- *
- * @param str
- * @returns
  */
 export const camelToSnake = (str: string) => {
 	let newStr = '';
@@ -37,13 +37,13 @@ export const camelToSnake = (str: string) => {
 
 /** Converts a `PascalCase` string to a `snake_case` string
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToSnake('HelloWorld'); // hello_world
  * ```
- *
- * @param str
- * @returns
  */
 export const pascalToSnake = (str: string) => {
 	let newStr = '';
@@ -83,13 +83,13 @@ export const pascalToSnake = (str: string) => {
 
 /** Converts a `camelCase` string to a `kebab-case` string
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToSnake('helloWorld'); // hello-world
  * ```
- *
- * @param str
- * @returns
  */
 export const camelToKebab = (str: string) => {
 	let newStr = '';
@@ -118,13 +118,13 @@ export const camelToKebab = (str: string) => {
 
 /** Converts a `PascalCase` string to a `kebab-case` string
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToSnake('HelloWorld'); // hello-world
  * ```
- *
- * @param str
- * @returns
  */
 export const pascalToKebab = (str: string) => {
 	let newStr = '';
@@ -153,12 +153,13 @@ export const pascalToKebab = (str: string) => {
 
 /** Converts a `camelCase` string to a `PascalCase` string (makes first letter lowercase)
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToPascal('helloWorld'); // HelloWorld
  * ```
- * @param str
- * @returns
  */
 export const camelToPascal = (str: string) => {
 	return `${str[0].toLocaleUpperCase()}${str.slice(1)}`;
@@ -166,12 +167,13 @@ export const camelToPascal = (str: string) => {
 
 /** Converts a `PascalCase` string to a `camelCase` string (makes first letter uppercase)
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * camelToPascal('HelloWorld'); // helloWorld
  * ```
- * @param str
- * @returns
  */
 export const pascalToCamel = (str: string) => {
 	return `${str[0].toLocaleLowerCase()}${str.slice(1)}`;
@@ -179,14 +181,15 @@ export const pascalToCamel = (str: string) => {
 
 /** Converts a `snake_case` string to a `PascalCase` string
  *
+ *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * snakeToPascal('hello_world'); // HelloWorld
  * snakeToPascal('HELLO_WORLD'); // HelloWorld
  * ```
- *
- * @param str
- * @returns
  */
 export const snakeToPascal = (str: string) => {
 	let newStr = '';
@@ -220,14 +223,15 @@ export const snakeToPascal = (str: string) => {
 
 /** Converts a `snake_case` string to a `camelCase` string
  *
+ *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * snakeToCamel('hello_world'); // helloWorld
  * snakeToCamel('HELLO_WORLD'); // helloWorld
  * ```
- *
- * @param str
- * @returns
  */
 export const snakeToCamel = (str: string) => {
 	let newStr = '';
@@ -261,13 +265,13 @@ export const snakeToCamel = (str: string) => {
 
 /** Converts a `kebab-case` string to a `PascalCase` string
  *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * kebabToPascal('hello-world'); // HelloWorld
  * ```
- *
- * @param str
- * @returns
  */
 export const kebabToPascal = (str: string) => {
 	let newStr = '';
@@ -296,13 +300,14 @@ export const kebabToPascal = (str: string) => {
 
 /** Converts a `kebab-case` string to a `camelCase` string
  *
+ *
+ * @param str
+ * @returns
+ *
  * ## Usage
  * ```ts
  * kebabToCamel('hello-world'); // helloWorld
  * ```
- *
- * @param str
- * @returns
  */
 export const kebabToCamel = (str: string) => {
 	let newStr = '';

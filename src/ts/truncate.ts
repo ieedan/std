@@ -12,7 +12,7 @@ type Options = {
  * @param param2
  * @returns
  *
- * ## Examples
+ * ## Usage
  * ```ts
  * const str = truncate('Hello World!', 5, { ending: '...' });
  *

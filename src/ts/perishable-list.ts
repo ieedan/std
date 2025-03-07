@@ -20,14 +20,15 @@ export class PerishableList<T> {
 
 	/** Adds an item to the list with an `expiresIn` time. The item will be removed from the list if the `expiresIn` time has passed.
 	 *
-	 * ## Usage
-	 * ```ts
-	 * list.add("Hello, World!", 1000);
-	 * ```
 	 *
 	 * @param item
 	 * @param expiresIn
 	 * @returns id of the item
+	 *
+	 * ## Usage
+	 * ```ts
+	 * list.add("Hello, World!", 1000);
+	 * ```
 	 */
 	add(item: T, expiresIn: number): number {
 		this.index++;
@@ -39,14 +40,14 @@ export class PerishableList<T> {
 
 	/** Removes an item from the list with the key returned from the `add` method.
 	 *
+	 * @param index
+	 *
 	 * ## Usage
 	 * ```ts
 	 * const key = list.add("Hello, World!", 1000);
 	 *
 	 * list.remove(key);
 	 * ```
-	 *
-	 * @param index
 	 */
 	remove(index: number) {
 		this.#items.delete(index);
@@ -65,7 +66,7 @@ export class PerishableList<T> {
 		this.index = -1;
 	}
 
-	/** Retrieved the un-expired items in the list */
+	/** The un-expired items in the list */
 	get items(): T[] {
 		const items: T[] = [];
 

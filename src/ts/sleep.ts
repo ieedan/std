@@ -3,7 +3,7 @@
  * @param durationMs The duration in ms until the sleep in over
  * @returns
  *
- * ## Example
+ * ## Usage
  * ```ts
  * console.log(Date.now()) // 1725739228744
  *

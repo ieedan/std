@@ -13,7 +13,7 @@ type _Result<T, E> = { ok: true; val: T } | { ok: false; err: E };
  * function functionThatMightFail(): Result<T, E>;
  * ```
  *
- * ## Examples
+ * ## Usage
  *
  * ```ts
  * const functionThatMightFail = (): Result<string, string> => Ok("Hello, World!");
@@ -47,7 +47,7 @@ class Result<T, E> {
 	 * );
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const functionThatMightFail = (): Result<string, string> => Ok("Hello, World!");
@@ -83,7 +83,7 @@ class Result<T, E> {
 	 * result.map((val) => val.length);
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const functionThatMightFail = (): Result<string, string> => Ok("Hello, World!");
@@ -114,7 +114,7 @@ class Result<T, E> {
 	 * result.mapOr(1, (val) => val.length);
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -159,7 +159,7 @@ class Result<T, E> {
 	 * result.mapOrElse(() => 1, (val) => val.length);
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -203,7 +203,7 @@ class Result<T, E> {
 	 * result.mapErr((err) => getCodeMsg(err));
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ```ts
 	 * const functionThatMightFail = (): Result<string, string> => Err(10);
@@ -234,7 +234,7 @@ class Result<T, E> {
 	 * result.mapErrOr("Should've been error", (err) => getCodeMsg(err));
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -279,7 +279,7 @@ class Result<T, E> {
 	 * result.mapErrOrElse(() => "Value", (_) => "Error!");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -356,7 +356,7 @@ class Result<T, E> {
 	 * result.unwrap();
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -397,7 +397,7 @@ class Result<T, E> {
 	 * result.unwrapErr();
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -439,7 +439,7 @@ class Result<T, E> {
 	 * result.unwrapOr(7);
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -479,7 +479,7 @@ class Result<T, E> {
 	 * result.unwrapErrOr("Error");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -518,7 +518,7 @@ class Result<T, E> {
 	 * result.unwrapOrElse(() => "Hello!");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -558,7 +558,7 @@ class Result<T, E> {
 	 * result.unwrapErrOrElse(() => "Error!");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -599,7 +599,7 @@ class Result<T, E> {
 	 * result.expect("Custom message");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -641,7 +641,7 @@ class Result<T, E> {
 	 * result.expectErr("Custom message");
 	 * ```
 	 *
-	 * ## Examples
+	 * ## Usage
 	 *
 	 * ### When `Ok`
 	 *
@@ -684,7 +684,7 @@ class Result<T, E> {
  * Ok(true);
  * ```
  *
- * ## Examples
+ * ## Usage
  *
  * ```ts
  * const functionThatCanFail = (condition) => {
@@ -711,7 +711,7 @@ const Ok = <T>(val: T): Result<T, never> => {
  * Err("I failed!");
  * ```
  *
- * ## Examples
+ * ## Usage
  *
  * ```ts
  * const functionThatCanFail = (condition) => {

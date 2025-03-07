@@ -1,14 +1,14 @@
 /** Joins the segments into a single url correctly handling leading and trailing slashes in each segment.
  *
+ * @param segments
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const url = join('https://example.com', '', 'api/', '/examples/');
  *
  * console.log(url); // https://example.com/api/examples
  * ```
- *
- * @param segments
- * @returns
  */
 const join = (...segments: string[]) => {
 	return segments
@@ -18,15 +18,16 @@ const join = (...segments: string[]) => {
 };
 
 /** Removes the leading and trailing slash from the segment (if they exist)
+ *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = removeLeadingAndTrailingSlash('/example/');
  *
  * console.log(segment); // 'example'
  * ```
- *
- * @param segment
- * @returns
  */
 const removeLeadingAndTrailingSlash = (segment: string) => {
 	const newSegment = removeLeadingSlash(segment);
@@ -35,15 +36,15 @@ const removeLeadingAndTrailingSlash = (segment: string) => {
 
 /** Adds a leading and trailing to the beginning and end of the segment (if it doesn't already exist)
  *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = addLeadingAndTrailingSlash('example');
  *
  * console.log(segment); // '/example/'
  * ```
- *
- * @param segment
- * @returns
  */
 const addLeadingAndTrailingSlash = (segment: string) => {
 	// this is a weird case so feel free to handle it however you think it makes the most sense
@@ -55,15 +56,15 @@ const addLeadingAndTrailingSlash = (segment: string) => {
 
 /** Removes the leading slash from the beginning of the segment (if it exists)
  *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = removeLeadingSlash('/example');
  *
  * console.log(segment); // 'example'
  * ```
- *
- * @param segment
- * @returns
  */
 const removeLeadingSlash = (segment: string): string => {
 	let newSegment = segment;
@@ -76,15 +77,15 @@ const removeLeadingSlash = (segment: string): string => {
 
 /** Adds a leading slash to the beginning of the segment (if it doesn't already exist)
  *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = addLeadingSlash('example');
  *
  * console.log(segment); // '/example'
  * ```
- *
- * @param segment
- * @returns
  */
 const addLeadingSlash = (segment: string): string => {
 	let newSegment = segment;
@@ -97,14 +98,15 @@ const addLeadingSlash = (segment: string): string => {
 
 /** Removes the trailing slash from the end of the segment (if it exists)
  *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = removeTrailingSlash('example/');
  *
  * console.log(segment); // 'example'
  * ```
- * @param segment
- * @returns
  */
 const removeTrailingSlash = (segment: string): string => {
 	let newSegment = segment;
@@ -117,15 +119,15 @@ const removeTrailingSlash = (segment: string): string => {
 
 /** Adds a trailing slash to the end of the segment (if it doesn't already exist)
  *
+ * @param segment
+ * @returns
+ *
  * ## Usage
  * ```ts
  * const segment = addTrailingSlash('example');
  *
  * console.log(segment); // 'example/'
  * ```
- *
- * @param segment
- * @returns
  */
 const addTrailingSlash = (segment: string): string => {
 	let newSegment = segment;
@@ -138,14 +140,14 @@ const addTrailingSlash = (segment: string): string => {
 
 /** Removes the last segment of the url.
  *
+ * @param url
+ *
  * ## Usage
  * ```ts
  * const url = upOneLevel('/first/second');
  *
  * console.log(url); // '/first'
  * ```
- *
- * @param url
  */
 const upOneLevel = (url: string): string => {
 	if (url === '/') return url;

@@ -1,14 +1,13 @@
 /** Generate a random number that lies between the provided min and max.
  *
- * ## Usage
- *
- * ```
- * const num = rand(0, 10); // 0 >= num <= 10
- * ```
- *
  * @param min
  * @param max
  * @returns
+ *
+ * ## Usage
+ * ```ts
+ * const num = rand(0, 10); // 0 >= num <= 10
+ * ```
  */
 const rand = (min: number, max: number): number => {
 	if (min > max) {

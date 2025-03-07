@@ -4,7 +4,7 @@
  * @param fn A mapping function to transform each pair into an item
  * @returns
  *
- * ## Example
+ * ## Usage
  * ```ts
  * console.log(map); // Map(5) { 0 => 5, 1 => 4, 2 => 3, 3 => 2, 4 => 1 }
  *
@@ -29,7 +29,7 @@ export const fromMap = <K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T
  * @param fn Summing function
  * @returns
  *
- * ## Examples
+ * ## Usage
  *
  * ```ts
  * const total = sum([1, 2, 3, 4, 5], (num) => num);
@@ -53,7 +53,7 @@ export const sum = <T>(arr: T[], fn: (item: T) => number): number => {
  * @param fn A mapping function to transform each item into a key value pair
  * @returns
  *
- * ## Example
+ * ## Usage
  * ```ts
  * const map = toMap([5, 4, 3, 2, 1], (item, i) => [i, item]);
  *

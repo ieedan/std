@@ -2,12 +2,13 @@ export const LETTER_REGEX = new RegExp(/[a-zA-Z]/);
 
 /** Checks if the provided character is a letter in the alphabet.
  *
+ * @param char
+ * @returns
+ *
  * ## Usage
  * ```ts
  * isLetter('a');
  * ```
- * @param char
- * @returns
  */
 export const isLetter = (char: string) => {
 	if (char.length > 1) {
