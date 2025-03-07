@@ -696,9 +696,9 @@ class Result<T, E> {
  * }
  * ```
  */
-const Ok = <T>(val: T): Result<T, never> => {
+export function Ok<T>(val: T): Result<T, never> {
 	return new Result<T, never>({ ok: true, val });
-};
+}
 
 /** Returns a new `Err` result type with the provided error
  *
@@ -723,8 +723,8 @@ const Ok = <T>(val: T): Result<T, never> => {
  * }
  * ```
  */
-const Err = <E>(err: E): Result<never, E> => {
+export function Err<E>(err: E): Result<never, E> {
 	return new Result<never, E>({ ok: false, err });
-};
+}
 
-export { type Result, Ok, Err };
+export type { Result };

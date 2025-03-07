@@ -9,4 +9,6 @@
  * promises.push(immediate(10));
  * ```
  */
-export const immediate = <T>(val: T) => new Promise<T>((res) => res(val));
+export function immediate<T>(val: T): Promise<T> {
+	return new Promise<T>((res) => res(val));
+}

@@ -13,7 +13,7 @@
  * console.log(arr); // [5, 4, 3, 2, 1]
  * ```
  */
-export const fromMap = <K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T[] => {
+export function fromMap<K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T[] {
 	const items: T[] = [];
 
 	for (const [key, value] of map) {
@@ -21,7 +21,7 @@ export const fromMap = <K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T
 	}
 
 	return items;
-};
+}
 
 /** Calculates the sum of all elements in the array based on the provided function.
  *
@@ -37,7 +37,7 @@ export const fromMap = <K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T
  * console.log(total); // 15
  * ```
  */
-export const sum = <T>(arr: T[], fn: (item: T) => number): number => {
+export function sum<T>(arr: T[], fn: (item: T) => number): number {
 	let total = 0;
 
 	for (const item of arr) {
@@ -45,7 +45,7 @@ export const sum = <T>(arr: T[], fn: (item: T) => number): number => {
 	}
 
 	return total;
-};
+}
 
 /** Maps the provided array into a map
  *
@@ -60,10 +60,10 @@ export const sum = <T>(arr: T[], fn: (item: T) => number): number => {
  * console.log(map); // Map(5) { 0 => 5, 1 => 4, 2 => 3, 3 => 2, 4 => 1 }
  * ```
  */
-export const toMap = <T, K, V>(
+export function toMap<T, K, V>(
 	arr: T[],
 	fn: (item: T, index: number) => [key: K, value: V]
-): Map<K, V> => {
+): Map<K, V> {
 	const map = new Map<K, V>();
 
 	for (let i = 0; i < arr.length; i++) {
@@ -73,4 +73,4 @@ export const toMap = <T, K, V>(
 	}
 
 	return map;
-};
+}

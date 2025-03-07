@@ -10,7 +10,7 @@
  * gcf(2, 2); // 2
  * ```
  */
-const gcf = (a: number, b: number): number => {
+export function gcf(a: number, b: number): number {
 	if (a === 0 || b === 0) throw new Error('Cannot get the GCF of 0');
 
 	// if they are negative we really just want the same thing
@@ -26,7 +26,7 @@ const gcf = (a: number, b: number): number => {
 	}
 
 	return num1;
-};
+}
 
 /** Solves the GCD (Greatest Common Divisor) using the **Euclidean Algorithm** (Alternate alias of `gcf`)
  *
@@ -40,6 +40,4 @@ const gcf = (a: number, b: number): number => {
  * gcd(2, 2); // 2
  * ```
  */
-const gcd = gcf;
-
-export { gcf, gcd };
+export const gcd = gcf;

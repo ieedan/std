@@ -11,10 +11,8 @@ import { gcf } from './gcf';
  * simplify(1920, 1080).join(":"); // 16:9
  * ```
  */
-const simplify = (numerator: number, denominator: number): [number, number] => {
+export function simplify(numerator: number, denominator: number): [number, number] {
 	const factor = gcf(numerator, denominator);
 
 	return [numerator / factor, denominator / factor];
-};
-
-export { simplify };
+}

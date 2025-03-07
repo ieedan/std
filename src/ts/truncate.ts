@@ -26,11 +26,11 @@ type Options = {
  * console.log(str); // '...World!'
  * ```
  */
-const truncate = (
+export function truncate(
 	str: string,
 	maxLength: number,
 	{ reverse = false, ending = '' }: Partial<Options> = { reverse: false, ending: '' }
-) => {
+): string {
 	if (str.length <= maxLength) return str;
 
 	if (reverse) {
@@ -38,6 +38,4 @@ const truncate = (
 	}
 
 	return `${str.slice(0, maxLength)}${ending}`;
-};
-
-export { truncate };
+}

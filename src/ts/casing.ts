@@ -10,7 +10,7 @@ import { isLetter } from './is-letter';
  * camelToSnake('helloWorld'); // hello_world
  * ```
  */
-export const camelToSnake = (str: string) => {
+export function camelToSnake(str: string): string {
 	let newStr = '';
 
 	for (let i = 0; i < str.length; i++) {
@@ -33,7 +33,7 @@ export const camelToSnake = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `PascalCase` string to a `snake_case` string
  *
@@ -45,7 +45,7 @@ export const camelToSnake = (str: string) => {
  * camelToSnake('HelloWorld'); // hello_world
  * ```
  */
-export const pascalToSnake = (str: string) => {
+export function pascalToSnake(str: string): string {
 	let newStr = '';
 
 	let firstLetter: number | undefined;
@@ -79,7 +79,7 @@ export const pascalToSnake = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `camelCase` string to a `kebab-case` string
  *
@@ -91,7 +91,7 @@ export const pascalToSnake = (str: string) => {
  * camelToSnake('helloWorld'); // hello-world
  * ```
  */
-export const camelToKebab = (str: string) => {
+export function camelToKebab(str: string): string {
 	let newStr = '';
 
 	for (let i = 0; i < str.length; i++) {
@@ -114,7 +114,7 @@ export const camelToKebab = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `PascalCase` string to a `kebab-case` string
  *
@@ -126,7 +126,7 @@ export const camelToKebab = (str: string) => {
  * camelToSnake('HelloWorld'); // hello-world
  * ```
  */
-export const pascalToKebab = (str: string) => {
+export function pascalToKebab(str: string): string {
 	let newStr = '';
 
 	for (let i = 0; i < str.length; i++) {
@@ -149,7 +149,7 @@ export const pascalToKebab = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `camelCase` string to a `PascalCase` string (makes first letter lowercase)
  *
@@ -161,9 +161,9 @@ export const pascalToKebab = (str: string) => {
  * camelToPascal('helloWorld'); // HelloWorld
  * ```
  */
-export const camelToPascal = (str: string) => {
+export function camelToPascal(str: string): string {
 	return `${str[0].toLocaleUpperCase()}${str.slice(1)}`;
-};
+}
 
 /** Converts a `PascalCase` string to a `camelCase` string (makes first letter uppercase)
  *
@@ -175,9 +175,9 @@ export const camelToPascal = (str: string) => {
  * camelToPascal('HelloWorld'); // helloWorld
  * ```
  */
-export const pascalToCamel = (str: string) => {
+export function pascalToCamel(str: string): string {
 	return `${str[0].toLocaleLowerCase()}${str.slice(1)}`;
-};
+}
 
 /** Converts a `snake_case` string to a `PascalCase` string
  *
@@ -191,7 +191,7 @@ export const pascalToCamel = (str: string) => {
  * snakeToPascal('HELLO_WORLD'); // HelloWorld
  * ```
  */
-export const snakeToPascal = (str: string) => {
+export function snakeToPascal(str: string): string {
 	let newStr = '';
 
 	let firstLetter = true;
@@ -219,7 +219,7 @@ export const snakeToPascal = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `snake_case` string to a `camelCase` string
  *
@@ -233,7 +233,7 @@ export const snakeToPascal = (str: string) => {
  * snakeToCamel('HELLO_WORLD'); // helloWorld
  * ```
  */
-export const snakeToCamel = (str: string) => {
+export function snakeToCamel(str: string): string {
 	let newStr = '';
 
 	let firstLetter = true;
@@ -261,7 +261,7 @@ export const snakeToCamel = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `kebab-case` string to a `PascalCase` string
  *
@@ -273,7 +273,7 @@ export const snakeToCamel = (str: string) => {
  * kebabToPascal('hello-world'); // HelloWorld
  * ```
  */
-export const kebabToPascal = (str: string) => {
+export function kebabToPascal(str: string): string {
 	let newStr = '';
 
 	for (let i = 0; i < str.length; i++) {
@@ -296,7 +296,7 @@ export const kebabToPascal = (str: string) => {
 	}
 
 	return newStr;
-};
+}
 
 /** Converts a `kebab-case` string to a `camelCase` string
  *
@@ -309,7 +309,7 @@ export const kebabToPascal = (str: string) => {
  * kebabToCamel('hello-world'); // helloWorld
  * ```
  */
-export const kebabToCamel = (str: string) => {
+export function kebabToCamel(str: string): string {
 	let newStr = '';
 
 	for (let i = 0; i < str.length; i++) {
@@ -326,4 +326,4 @@ export const kebabToCamel = (str: string) => {
 	}
 
 	return newStr;
-};
+}

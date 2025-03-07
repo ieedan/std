@@ -14,9 +14,9 @@ import { stripVTControlCharacters as stripAsni } from 'node:util';
  * console.log(padded); // '...Hello'
  * ```
  */
-const leftPad = (str: string, space: number, padWith = ' ') => {
+export function leftPad(str: string, space: number, padWith = ' '): string {
 	return padWith.repeat(space) + str;
-};
+}
 
 /** Adds the `padWith` until the string length matches the `length`
  *
@@ -31,12 +31,12 @@ const leftPad = (str: string, space: number, padWith = ' ') => {
  * console.log(padded); // '..1'
  * ```
  */
-const leftPadMin = (str: string, length: number, padWith = ' ') => {
+export function leftPadMin(str: string, length: number, padWith = ' '): string {
 	if (stripAsni(str).length > length)
 		throw new Error('String length is greater than the length provided.');
 
 	return padWith.repeat(length - stripAsni(str).length) + str;
-};
+}
 
 /** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
  *
@@ -52,9 +52,9 @@ const leftPadMin = (str: string, length: number, padWith = ' ') => {
  * console.log(padded); // 'Hello...'
  * ```
  */
-const rightPad = (str: string, space: number, padWith = ' ') => {
+export function rightPad(str: string, space: number, padWith = ' '): string {
 	return str + padWith.repeat(space);
-};
+}
 
 /** Adds the `padWith` until the string length matches the `length`
  *
@@ -69,12 +69,12 @@ const rightPad = (str: string, space: number, padWith = ' ') => {
  * console.log(padded); // '1..'
  * ```
  */
-const rightPadMin = (str: string, length: number, padWith = ' ') => {
+export function rightPadMin(str: string, length: number, padWith = ' '): string {
 	if (stripAsni(str).length > length)
 		throw new Error('String length is greater than the length provided.');
 
 	return str + padWith.repeat(length - stripAsni(str).length);
-};
+}
 
 /** Pads the string with the `padWith` so that it appears in the center of a new string with the provided length.
  *
@@ -92,7 +92,7 @@ const rightPadMin = (str: string, length: number, padWith = ' ') => {
  * console.log(padded); // '  Hello, World!  '
  * ```
  */
-const centerPad = (str: string, length: number, padWith = ' ') => {
+export function centerPad(str: string, length: number, padWith = ' '): string {
 	if (stripAsni(str).length > length) {
 		throw new Error('String length is greater than the length provided.');
 	}
@@ -104,6 +104,4 @@ const centerPad = (str: string, length: number, padWith = ' ') => {
 	const paddingRight = Math.ceil(overflow / 2);
 
 	return padWith.repeat(paddingLeft) + str + padWith.repeat(paddingRight);
-};
-
-export { leftPad, leftPadMin, rightPad, rightPadMin, centerPad };
+}

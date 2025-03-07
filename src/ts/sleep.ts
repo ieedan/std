@@ -12,7 +12,6 @@
  * console.log(Date.now()) // 1725739229744
  * ```
  */
-const sleep = async (durationMs: number): Promise<void> =>
-	new Promise((res) => setTimeout(res, durationMs));
-
-export { sleep };
+export function sleep(durationMs: number): Promise<void> {
+	return new Promise((res) => setTimeout(res, durationMs));
+}

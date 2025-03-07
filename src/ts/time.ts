@@ -21,10 +21,10 @@ export const DAY = HOUR * 24;
  * formatDuration(HOUR); // 1h
  * ```
  */
-const formatDuration = (
+export function formatDuration(
 	durationMs: number,
 	transform: (num: number) => string = (num) => num.toString()
-): string => {
+): string {
 	if (durationMs < SECOND) return `${transform(durationMs)}ms`;
 
 	if (durationMs < MINUTE) return `${transform(durationMs / SECOND)}s`;
@@ -32,6 +32,4 @@ const formatDuration = (
 	if (durationMs < HOUR) return `${transform(durationMs / MINUTE)}min`;
 
 	return `${durationMs / HOUR}h`;
-};
-
-export { formatDuration };
+}
