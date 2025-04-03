@@ -32,10 +32,12 @@ export function leftPad(str: string, space: number, padWith = ' '): string {
  * ```
  */
 export function leftPadMin(str: string, length: number, padWith = ' '): string {
-	if (stripAsni(str).length > length)
+	const strippedLength = stripAsni(str).length;
+
+	if (strippedLength > length)
 		throw new Error('String length is greater than the length provided.');
 
-	return padWith.repeat(length - stripAsni(str).length) + str;
+	return padWith.repeat(length - strippedLength) + str;
 }
 
 /** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
@@ -70,10 +72,12 @@ export function rightPad(str: string, space: number, padWith = ' '): string {
  * ```
  */
 export function rightPadMin(str: string, length: number, padWith = ' '): string {
-	if (stripAsni(str).length > length)
+	const strippedLength = stripAsni(str).length;
+
+	if (strippedLength > length)
 		throw new Error('String length is greater than the length provided.');
 
-	return str + padWith.repeat(length - stripAsni(str).length);
+	return str + padWith.repeat(length - strippedLength);
 }
 
 /** Pads the string with the `padWith` so that it appears in the center of a new string with the provided length.
@@ -93,11 +97,13 @@ export function rightPadMin(str: string, length: number, padWith = ' '): string 
  * ```
  */
 export function centerPad(str: string, length: number, padWith = ' '): string {
-	if (stripAsni(str).length > length) {
+	const strippedLength = stripAsni(str).length;
+
+	if (strippedLength > length) {
 		throw new Error('String length is greater than the length provided.');
 	}
 
-	const overflow = length - stripAsni(str).length;
+	const overflow = length - strippedLength;
 
 	const paddingLeft = Math.floor(overflow / 2);
 
