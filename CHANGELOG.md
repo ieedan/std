@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1](https://github.com/ieedan/std/compare/v4.2.0...v4.2.1) (2025-04-03)
+
+
+### Bug Fixes
+
+* cache calls to `stripAnsi` in `ts/pad` ([#81](https://github.com/ieedan/std/issues/81)) ([89b21f2](https://github.com/ieedan/std/commit/89b21f28965d08b986042d1cc7cdf8754ee9313e))
+
 ## [4.2.0](https://github.com/ieedan/std/compare/v4.1.0...v4.2.0) (2025-03-07)
 
 
