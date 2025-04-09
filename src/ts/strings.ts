@@ -37,3 +37,18 @@ export function endsWithOneOf(str: string, strings: string[]): boolean {
 
 	return false;
 }
+
+/** Case insensitive equality. Returns true if `left.toLowerCase()` and `right.toLowerCase()` are equal.
+ *
+ * @param left
+ * @param right
+ * @returns
+ *
+ * ## Usage
+ * ```ts
+ * iEqual('Hello, World!', 'hello, World!'); // true
+ * ```
+ */
+export function iEqual(left: string, right: string): boolean {
+	return left.toLowerCase() === right.toLowerCase();
+}
