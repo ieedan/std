@@ -14,3 +14,14 @@ describe('endsWithOneOf', () => {
 		expect(strings.endsWithOneOf('baa', ['ab', 'ac'])).toBe(false);
 	});
 });
+
+describe('iEqual', () => {
+	it('returns true when strings are equal', () => {
+		expect(strings.iEqual('A', 'a')).toBe(true);
+		expect(strings.iEqual('Hello, World!', 'hello, world!')).toBe(true);
+	});
+
+	it('returns false when strings are not equal', () => {
+		expect(strings.iEqual('a', 'b')).toBe(false);
+	});
+});
