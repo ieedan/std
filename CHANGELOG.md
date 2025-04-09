@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.0](https://github.com/ieedan/std/compare/v4.2.1...v4.3.0) (2025-04-09)
+
+
+### Features
+
+* Add `iEqual` to `ts/strings` ([#84](https://github.com/ieedan/std/issues/84)) ([92680f0](https://github.com/ieedan/std/commit/92680f02c9703bb3ef4a7a181a0b970579fedd59))
+
 ## [4.2.1](https://github.com/ieedan/std/compare/v4.2.0...v4.2.1) (2025-04-03)
 
 
