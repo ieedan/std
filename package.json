@@ -1,6 +1,6 @@
 {
 	"name": "std",
-	"version": "1.0.0",
+	"version": "4.4.0",
 	"packageManager": "pnpm@10.4.1",
 	"type": "module",
 	"scripts": {
@@ -12,7 +12,7 @@
 		"check:types": "tsc --noEmit",
 		"docs:generate": "typedoc",
 		"build:registry": "jsrepo build",
-		"ci:release": "pnpm jsrepo publish --verbose"
+		"ci:release": "pnpm jsrepo publish --verbose && changeset tag"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
