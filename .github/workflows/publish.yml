@@ -10,7 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
     release:
         name: Build & Publish Release
-        if: github.repository == 'ieedan/priv-std'
+        if: github.repository == 'ieedan/std'
         runs-on: ubuntu-latest
 
         steps:
