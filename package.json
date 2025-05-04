@@ -1,6 +1,6 @@
 {
 	"name": "std",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"packageManager": "pnpm@10.4.1",
 	"type": "module",
 	"scripts": {
