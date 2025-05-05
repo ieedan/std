@@ -1,5 +1,11 @@
 # std
 
+## 5.0.1
+### Patch Changes
+
+
+- chore: bump jsrepo to official release ([#91](https://github.com/ieedan/std/pull/91))
+
 ## 5.0.0
 ### Major Changes
 
