@@ -1,5 +1,11 @@
 # std
 
+## 5.0.2
+### Patch Changes
+
+
+- chore: update README links ([#94](https://github.com/ieedan/std/pull/94))
+
 ## 5.0.1
 ### Patch Changes
 
