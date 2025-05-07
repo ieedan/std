@@ -32,7 +32,7 @@ jsrepo add ts/result
 | [ts/is-letter](https://ieedan.github.io/std/functions/is-letter.isLetter.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/is-number](https://ieedan.github.io/std/functions/is-number.isNumber.html)                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/lines](https://ieedan.github.io/std/modules/lines.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
-| [ts/matcher](https://ieedan.github.io/std/modules/matcher.Matcher.html)                        | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/matcher](https://ieedan.github.io/std/classes/matcher.Matcher.html)                        | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/math](https://ieedan.github.io/std/modules/math.html)                                      | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/pad](https://ieedan.github.io/std/functions/pad.leftPad.html)                              | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/perishable-list](https://ieedan.github.io/std/classes/perishable-list.PerishableList.html) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
