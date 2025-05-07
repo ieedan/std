@@ -1,6 +1,7 @@
 <!-- can't merge if it's not passing -->
 
-[![jsrepo](https://jsrepo.dev/badges/registry/blocks?url=github/ieedan/std)](https://jsrepo.dev/registry?url=github/ieedan/std)
+[![jsrepo](https://jsrepo.com/badges/@ieedan/std)](https://jsrepo.com/@ieedan/std)
+[![jsrepo](https://jsrepo.com/badges/@ieedan/std/dm)](https://jsrepo.com/@ieedan/std)
 
 # std
 
