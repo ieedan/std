@@ -1,9 +1,6 @@
-<!-- can't merge if it's not passing -->
-
-[![jsrepo](https://jsrepo.com/badges/@ieedan/std)](https://jsrepo.com/@ieedan/std)
-[![jsrepo](https://jsrepo.com/badges/@ieedan/std/dm)](https://jsrepo.com/@ieedan/std)
-
 # std
+
+[![jsrepo](https://jsrepo.com/badges/@ieedan/std)](https://jsrepo.com/@ieedan/std) [![jsrepo](https://jsrepo.com/badges/@ieedan/std/dm)](https://jsrepo.com/@ieedan/std)
 
 Types and utility functions brokered with [jsrepo](https://jsrepo.dev). If I have wrote it twice it's probably here.
 
