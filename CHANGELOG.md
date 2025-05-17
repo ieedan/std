@@ -1,5 +1,11 @@
 # std
 
+## 5.1.0
+### Minor Changes
+
+
+- feat: 🎉 New util `types` ([#98](https://github.com/ieedan/std/pull/98))
+
 ## 5.0.3
 ### Patch Changes
 
