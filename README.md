@@ -41,4 +41,5 @@ jsrepo add ts/result
 | [ts/strings](https://ieedan.github.io/std/modules/strings.html)                                | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/time](https://ieedan.github.io/std/functions/time.formatDuration.html)                     | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/truncate](https://ieedan.github.io/std/functions/truncate.truncate.html)                   | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
+| [ts/types](https://ieedan.github.io/std/modules/types.html)                                    | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
 | [ts/url](https://ieedan.github.io/std/functions/url.join.html)                                 | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/main/badges/coverage-total.svg) |
