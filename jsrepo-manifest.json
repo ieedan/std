@@ -13,7 +13,7 @@
 		{
 			"name": "Cursor Rule",
 			"path": "./rules/typescript-utility-functions.mdc",
-			"expectedPath": "./.cursor/rules",
+			"expectedPath": "./.cursor/rules/typescript-utility-functions.mdc",
 			"optional": true
 		}
 	],
