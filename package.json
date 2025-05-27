@@ -12,7 +12,8 @@
 		"check:types": "tsc --noEmit",
 		"docs:generate": "typedoc",
 		"build:registry": "jsrepo build",
-		"ci:release": "pnpm jsrepo publish --verbose && changeset tag"
+		"ci:release": "pnpm jsrepo publish --verbose && changeset tag",
+		"changeset:version": "changeset version && pnpm format"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
@@ -29,9 +30,6 @@
 		"typedoc-material-theme": "^1.4.0"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@biomejs/biome",
-			"esbuild"
-		]
+		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
 	}
 }

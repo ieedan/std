@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Before writing a new TypeScript utility check if the @ieedan/std registry has it already and if it does use it instead.
