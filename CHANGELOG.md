@@ -1,5 +1,14 @@
 # std
 
+## 5.2.2
+### Patch Changes
+
+
+- chore: fix cursor rules config ([#105](https://github.com/ieedan/std/pull/105))
+
+
+- chore: Add cursor rule config file ([#105](https://github.com/ieedan/std/pull/105))
+
 ## 5.2.1
 ### Patch Changes
 
