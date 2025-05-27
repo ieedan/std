@@ -1,5 +1,14 @@
 # std
 
+## 5.2.0
+### Minor Changes
+
+
+- feat: Add `equalsOneOf` utility ([#101](https://github.com/ieedan/std/pull/101))
+
+
+- feat: Update `strings` API to return the matched string for `startsWithOneOf` and `endsWithOneOf` ([#101](https://github.com/ieedan/std/pull/101))
+
 ## 5.1.0
 ### Minor Changes
 
