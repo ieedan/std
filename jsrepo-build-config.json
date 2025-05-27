@@ -13,7 +13,7 @@
 	"configFiles": [
 		{
 			"name": "Cursor Rule",
-			"expectedPath": "./.cursor/rules",
+			"expectedPath": "./.cursor/rules/typescript-utility-functions.mdc",
 			"path": "./rules/typescript-utility-functions.mdc",
 			"optional": true
 		}
