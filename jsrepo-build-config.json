@@ -1,5 +1,5 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.30.0/schemas/registry-config.json",
+	"$schema": "https://unpkg.com/jsrepo@2.1.0/schemas/registry-config.json",
 	"name": "@ieedan/std",
 	"version": "package",
 	"meta": {
@@ -10,6 +10,14 @@
 		"repository": "https://github.com/ieedan/std",
 		"tags": ["typescript", "std", "utilities"]
 	},
+	"configFiles": [
+		{
+			"name": "Cursor Rule",
+			"expectedPath": "./.cursor/rules",
+			"path": "./rules/typescript-utility-functions.mdc",
+			"optional": true
+		}
+	],
 	"dirs": ["./src"],
 	"includeBlocks": [],
 	"includeCategories": [],
