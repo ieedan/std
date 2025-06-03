@@ -1,5 +1,14 @@
 # std
 
+## 5.3.0
+### Minor Changes
+
+
+- feat(ts/time): Use Branded types for format duration and units. ([#107](https://github.com/ieedan/std/pull/107))
+
+
+- feat(ts/types): Add `Brand` utility type ([#107](https://github.com/ieedan/std/pull/107))
+
 ## 5.2.2
 ### Patch Changes
 
