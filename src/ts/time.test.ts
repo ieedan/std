@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { milliseconds, formatDuration, type Milliseconds } from './time';
+import { type Milliseconds, formatDuration, milliseconds } from './time';
 
 describe('formatDuration', () => {
 	it('correctly formats durations', () => {
