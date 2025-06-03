@@ -1,6 +1,6 @@
-import type { Brand } from "./types";
+import type { Brand } from './types';
 
-export type Milliseconds = Brand<number, "milliseconds">;
+export type Milliseconds = Brand<number, 'milliseconds'>;
 
 export const milliseconds = {
 	/** Milliseconds in a second */
@@ -15,7 +15,7 @@ export const milliseconds = {
 	YEAR: (1000 * 60 * 60 * 24 * 365) as Milliseconds,
 } as const;
 
-export type Seconds = Brand<number, "seconds">;
+export type Seconds = Brand<number, 'seconds'>;
 
 export const seconds = {
 	/** Seconds in a minute */
