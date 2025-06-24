@@ -7,7 +7,10 @@
 		"module": "ES2022",
 		"target": "ES2022",
 		"skipLibCheck": true,
-		"strict": true
+		"strict": true,
+		"paths": {
+			"@utils/*": ["./src/utils/*"]
+		}
 	},
 	"include": ["src/**/*.ts"]
 }

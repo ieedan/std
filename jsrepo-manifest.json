@@ -2,12 +2,18 @@
 	"name": "@ieedan/std",
 	"version": "package",
 	"meta": {
-		"authors": ["Aidan Bleser"],
+		"authors": [
+			"Aidan Bleser"
+		],
 		"bugs": "https://github.com/ieedan/std/issues",
 		"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
 		"homepage": "https://ieedan.github.io/std/",
 		"repository": "https://github.com/ieedan/std",
-		"tags": ["typescript", "std", "utilities"]
+		"tags": [
+			"typescript",
+			"std",
+			"utilities"
+		]
 	},
 	"configFiles": [
 		{
@@ -26,9 +32,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["array.ts", "array.test.ts"],
+					"files": [
+						"array.ts",
+						"array.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -39,10 +49,16 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["casing.ts", "casing.test.ts"],
-					"localDependencies": ["ts/is-letter"],
+					"files": [
+						"casing.ts",
+						"casing.test.ts"
+					],
+					"localDependencies": [
+						"ts/is-letter"
+					],
 					"_imports_": {
 						"./is-letter": "{{ts/is-letter}}"
 					},
@@ -54,9 +70,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["dispatcher.ts", "dispatcher.test.ts"],
+					"files": [
+						"dispatcher.ts",
+						"dispatcher.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -67,10 +87,17 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["ipv4-address.ts", "ipv4-address.test.ts"],
-					"localDependencies": ["ts/is-number", "ts/result"],
+					"files": [
+						"ipv4-address.ts",
+						"ipv4-address.test.ts"
+					],
+					"localDependencies": [
+						"ts/is-number",
+						"ts/result"
+					],
 					"_imports_": {
 						"./is-number": "{{ts/is-number}}",
 						"./result": "{{ts/result}}"
@@ -83,9 +110,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["is-letter.ts", "is-letter.test.ts"],
+					"files": [
+						"is-letter.ts",
+						"is-letter.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -96,9 +127,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["is-number.ts", "is-number.test.ts"],
+					"files": [
+						"is-number.ts",
+						"is-number.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -109,12 +144,38 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["lines.ts", "lines.test.ts"],
-					"localDependencies": ["ts/pad"],
+					"files": [
+						"lines.ts",
+						"lines.test.ts"
+					],
+					"localDependencies": [
+						"ts/pad"
+					],
 					"_imports_": {
 						"./pad": "{{ts/pad}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "logger",
+					"directory": "src/ts",
+					"category": "ts",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"logger.ts"
+					],
+					"localDependencies": [
+						"utils/utils"
+					],
+					"_imports_": {
+						"@utils/utils": "{{utils/utils}}"
 					},
 					"dependencies": [],
 					"devDependencies": []
@@ -124,9 +185,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["matcher.ts", "matcher.test.ts"],
+					"files": [
+						"matcher.ts",
+						"matcher.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -137,6 +202,7 @@
 					"directory": "src/ts/math",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": true,
 					"list": true,
 					"files": [
@@ -163,9 +229,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["pad.ts", "pad.test.ts"],
+					"files": [
+						"pad.ts",
+						"pad.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -176,9 +246,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["perishable-list.ts", "perishable-list.test.ts"],
+					"files": [
+						"perishable-list.ts",
+						"perishable-list.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -189,9 +263,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["promises.ts", "promises.test.ts"],
+					"files": [
+						"promises.ts",
+						"promises.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -202,9 +280,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["rand.ts", "rand.test.ts"],
+					"files": [
+						"rand.ts",
+						"rand.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -215,9 +297,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["result.ts", "result.test.ts"],
+					"files": [
+						"result.ts",
+						"result.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -228,9 +314,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["sleep.ts", "sleep.test.ts"],
+					"files": [
+						"sleep.ts",
+						"sleep.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -241,9 +331,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["stopwatch.ts", "stopwatch.test.ts"],
+					"files": [
+						"stopwatch.ts",
+						"stopwatch.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -254,9 +348,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["strings.ts", "strings.test.ts"],
+					"files": [
+						"strings.ts",
+						"strings.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -267,11 +365,19 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["time.ts", "time.test.ts"],
-					"localDependencies": [],
-					"_imports_": {},
+					"files": [
+						"time.ts",
+						"time.test.ts"
+					],
+					"localDependencies": [
+						"ts/types"
+					],
+					"_imports_": {
+						"./types": "{{ts/types}}"
+					},
 					"dependencies": [],
 					"devDependencies": []
 				},
@@ -280,9 +386,13 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["truncate.ts", "truncate.test.ts"],
+					"files": [
+						"truncate.ts",
+						"truncate.test.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -293,9 +403,12 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": false,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["types.ts"],
+					"files": [
+						"types.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
@@ -306,9 +419,34 @@
 					"directory": "src/ts",
 					"category": "ts",
 					"tests": true,
+					"docs": false,
 					"subdirectory": false,
 					"list": true,
-					"files": ["url.ts", "url.test.ts"],
+					"files": [
+						"url.ts",
+						"url.test.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "utils",
+			"blocks": [
+				{
+					"name": "utils",
+					"directory": "src/utils",
+					"category": "utils",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"utils.ts"
+					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
