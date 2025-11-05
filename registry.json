@@ -3,7 +3,7 @@
 	"type": "repository",
 	"items": [
 		{
-			"name": "ts/result",
+			"name": "result",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -32,7 +32,7 @@
 					"_imports_": [
 						{
 							"import": "./result",
-							"item": "ts/result",
+							"item": "result",
 							"meta": {
 								"filePathRelativeToItem": "result.ts"
 							}
@@ -42,7 +42,7 @@
 			]
 		},
 		{
-			"name": "ts/array",
+			"name": "array",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -71,7 +71,7 @@
 					"_imports_": [
 						{
 							"import": "./array",
-							"item": "ts/array",
+							"item": "array",
 							"meta": {
 								"filePathRelativeToItem": "array.ts"
 							}
@@ -81,7 +81,7 @@
 			]
 		},
 		{
-			"name": "ts/casing",
+			"name": "casing",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -105,7 +105,7 @@
 					"_imports_": [
 						{
 							"import": "./casing",
-							"item": "ts/casing",
+							"item": "casing",
 							"meta": {
 								"filePathRelativeToItem": "casing.ts"
 							}
@@ -115,7 +115,7 @@
 			]
 		},
 		{
-			"name": "ts/dispatcher",
+			"name": "dispatcher",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -144,7 +144,7 @@
 					"_imports_": [
 						{
 							"import": "./dispatcher",
-							"item": "ts/dispatcher",
+							"item": "dispatcher",
 							"meta": {
 								"filePathRelativeToItem": "dispatcher.ts"
 							}
@@ -154,7 +154,7 @@
 			]
 		},
 		{
-			"name": "ts/ipv4-address",
+			"name": "ipv4-address",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -178,7 +178,7 @@
 					"_imports_": [
 						{
 							"import": "./ipv4-address",
-							"item": "ts/ipv4-address",
+							"item": "ipv4-address",
 							"meta": {
 								"filePathRelativeToItem": "ipv4-address.ts"
 							}
@@ -188,7 +188,7 @@
 			]
 		},
 		{
-			"name": "ts/math",
+			"name": "math",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -211,14 +211,14 @@
 					"_imports_": [
 						{
 							"import": "./triangles",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "triangles.ts"
 							}
 						},
 						{
 							"import": "./types",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "types.ts"
 							}
@@ -232,7 +232,7 @@
 					"_imports_": [
 						{
 							"import": ".",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "index.ts"
 							}
@@ -251,7 +251,7 @@
 					"_imports_": [
 						{
 							"import": ".",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "index.ts"
 							}
@@ -264,7 +264,7 @@
 					"_imports_": [
 						{
 							"import": "./gcf",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "gcf.ts"
 							}
@@ -278,7 +278,7 @@
 					"_imports_": [
 						{
 							"import": ".",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "index.ts"
 							}
@@ -297,7 +297,7 @@
 					"_imports_": [
 						{
 							"import": ".",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "index.ts"
 							}
@@ -310,7 +310,7 @@
 					"_imports_": [
 						{
 							"import": "./conversions",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "conversions.ts"
 							}
@@ -324,7 +324,7 @@
 					"_imports_": [
 						{
 							"import": ".",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "index.ts"
 							}
@@ -342,56 +342,56 @@
 					"_imports_": [
 						{
 							"import": "./circle",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "circle.ts"
 							}
 						},
 						{
 							"import": "./conversions",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "conversions.ts"
 							}
 						},
 						{
 							"import": "./fractions",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "fractions.ts"
 							}
 						},
 						{
 							"import": "./gcf",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "gcf.ts"
 							}
 						},
 						{
 							"import": "./triangles",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "triangles.ts"
 							}
 						},
 						{
 							"import": "./gcf",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "gcf.ts"
 							}
 						},
 						{
 							"import": "./gcf",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "gcf.ts"
 							}
 						},
 						{
 							"import": "./types",
-							"item": "ts/math",
+							"item": "math",
 							"meta": {
 								"filePathRelativeToItem": "types.ts"
 							}
@@ -401,7 +401,7 @@
 			]
 		},
 		{
-			"name": "ts/pad",
+			"name": "pad",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -430,7 +430,7 @@
 					"_imports_": [
 						{
 							"import": "./pad",
-							"item": "ts/pad",
+							"item": "pad",
 							"meta": {
 								"filePathRelativeToItem": "pad.ts"
 							}
@@ -440,7 +440,7 @@
 			]
 		},
 		{
-			"name": "ts/perishable-list",
+			"name": "perishable-list",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -469,7 +469,7 @@
 					"_imports_": [
 						{
 							"import": "./perishable-list",
-							"item": "ts/perishable-list",
+							"item": "perishable-list",
 							"meta": {
 								"filePathRelativeToItem": "perishable-list.ts"
 							}
@@ -479,7 +479,7 @@
 			]
 		},
 		{
-			"name": "ts/promises",
+			"name": "promises",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -508,7 +508,7 @@
 					"_imports_": [
 						{
 							"import": "./promises",
-							"item": "ts/promises",
+							"item": "promises",
 							"meta": {
 								"filePathRelativeToItem": "promises.ts"
 							}
@@ -518,7 +518,7 @@
 			]
 		},
 		{
-			"name": "ts/rand",
+			"name": "rand",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -547,7 +547,7 @@
 					"_imports_": [
 						{
 							"import": "./rand",
-							"item": "ts/rand",
+							"item": "rand",
 							"meta": {
 								"filePathRelativeToItem": "rand.ts"
 							}
@@ -557,7 +557,7 @@
 			]
 		},
 		{
-			"name": "ts/sleep",
+			"name": "sleep",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -586,7 +586,7 @@
 					"_imports_": [
 						{
 							"import": "./sleep",
-							"item": "ts/sleep",
+							"item": "sleep",
 							"meta": {
 								"filePathRelativeToItem": "sleep.ts"
 							}
@@ -596,7 +596,7 @@
 			]
 		},
 		{
-			"name": "ts/stopwatch",
+			"name": "stopwatch",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -625,7 +625,7 @@
 					"_imports_": [
 						{
 							"import": "./stopwatch",
-							"item": "ts/stopwatch",
+							"item": "stopwatch",
 							"meta": {
 								"filePathRelativeToItem": "stopwatch.ts"
 							}
@@ -635,7 +635,7 @@
 			]
 		},
 		{
-			"name": "ts/strings",
+			"name": "strings",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -664,7 +664,7 @@
 					"_imports_": [
 						{
 							"import": "./strings",
-							"item": "ts/strings",
+							"item": "strings",
 							"meta": {
 								"filePathRelativeToItem": "strings.ts"
 							}
@@ -674,11 +674,11 @@
 			]
 		},
 		{
-			"name": "ts/time",
+			"name": "time",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [
-				"ts/types"
+				"types"
 			],
 			"remoteDependencies": [
 				{
@@ -699,7 +699,7 @@
 					"_imports_": [
 						{
 							"import": "./types",
-							"item": "ts/types",
+							"item": "types",
 							"meta": {
 								"filePathRelativeToItem": "types.ts"
 							}
@@ -713,7 +713,7 @@
 					"_imports_": [
 						{
 							"import": "./time",
-							"item": "ts/time",
+							"item": "time",
 							"meta": {
 								"filePathRelativeToItem": "time.ts"
 							}
@@ -723,7 +723,7 @@
 			]
 		},
 		{
-			"name": "ts/truncate",
+			"name": "truncate",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -752,7 +752,7 @@
 					"_imports_": [
 						{
 							"import": "./truncate",
-							"item": "ts/truncate",
+							"item": "truncate",
 							"meta": {
 								"filePathRelativeToItem": "truncate.ts"
 							}
@@ -762,7 +762,7 @@
 			]
 		},
 		{
-			"name": "ts/types",
+			"name": "types",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -776,7 +776,7 @@
 			]
 		},
 		{
-			"name": "ts/url",
+			"name": "url",
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
@@ -805,7 +805,7 @@
 					"_imports_": [
 						{
 							"import": "./url",
-							"item": "ts/url",
+							"item": "url",
 							"meta": {
 								"filePathRelativeToItem": "url.ts"
 							}
