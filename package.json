@@ -13,7 +13,8 @@
 		"docs:generate": "typedoc",
 		"build:registry": "jsrepo build",
 		"ci:release": "pnpm jsrepo publish --verbose && changeset tag",
-		"changeset:version": "changeset version && pnpm format"
+		"changeset:version": "changeset version && pnpm format",
+		"v3:build:registry": "pnpm dlx https://pkg.pr.new/jsrepojs/jsrepo@07b23c2 build"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
@@ -24,12 +25,16 @@
 		"jsrepo": "^2.0.2",
 		"typedoc": "^0.28.4",
 		"typescript": "^5.8.3",
-		"vitest": "^3.1.3"
+		"vitest": "^3.1.3",
+		"jsrepov3": "npm:jsrepo@^3.0.0-beta.2"
 	},
 	"dependencies": {
 		"typedoc-material-theme": "^1.4.0"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"esbuild"
+		]
 	}
 }
