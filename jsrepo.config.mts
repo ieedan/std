@@ -4,30 +4,30 @@ import { repository } from "jsrepov3/outputs";
 export default defineConfig({
 	registry: {
 		name: "@ieedan/std",
-        outputs: [repository({ format: true })],
+		outputs: [repository({ format: true })],
 		items: [
 			{
-				name: "ts/result",
+				name: "result",
 				type: "util",
 				files: [{ path: "src/ts/result.ts" }, { path: "src/ts/result.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/array",
+				name: "array",
 				type: "util",
 				files: [{ path: "src/ts/array.ts" }, { path: "src/ts/array.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/casing",
+				name: "casing",
 				type: "util",
 				files: [{ path: "src/ts/casing.ts" }, { path: "src/ts/casing.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/dispatcher",
+				name: "dispatcher",
 				type: "util",
 				files: [{ path: "src/ts/dispatcher.ts" }, { path: "src/ts/dispatcher.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/ipv4-address",
+				name: "ipv4-address",
 				type: "util",
 				files: [
 					{ path: "src/ts/ipv4-address.ts" },
@@ -35,7 +35,7 @@ export default defineConfig({
 				],
 			},
 			{
-				name: "ts/math",
+				name: "math",
 				type: "util",
 				files: [
 					{ path: "src/ts/math/circle.ts" },
@@ -53,12 +53,12 @@ export default defineConfig({
 				],
 			},
 			{
-				name: "ts/pad",
+				name: "pad",
 				type: "util",
 				files: [{ path: "src/ts/pad.ts" }, { path: "src/ts/pad.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/perishable-list",
+				name: "perishable-list",
 				type: "util",
 				files: [
 					{ path: "src/ts/perishable-list.ts" },
@@ -66,47 +66,47 @@ export default defineConfig({
 				],
 			},
 			{
-				name: "ts/promises",
+				name: "promises",
 				type: "util",
 				files: [{ path: "src/ts/promises.ts" }, { path: "src/ts/promises.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/rand",
+				name: "rand",
 				type: "util",
 				files: [{ path: "src/ts/rand.ts" }, { path: "src/ts/rand.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/sleep",
+				name: "sleep",
 				type: "util",
 				files: [{ path: "src/ts/sleep.ts" }, { path: "src/ts/sleep.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/stopwatch",
+				name: "stopwatch",
 				type: "util",
 				files: [{ path: "src/ts/stopwatch.ts" }, { path: "src/ts/stopwatch.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/strings",
+				name: "strings",
 				type: "util",
 				files: [{ path: "src/ts/strings.ts" }, { path: "src/ts/strings.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/time",
+				name: "time",
 				type: "util",
 				files: [{ path: "src/ts/time.ts" }, { path: "src/ts/time.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/truncate",
+				name: "truncate",
 				type: "util",
 				files: [{ path: "src/ts/truncate.ts" }, { path: "src/ts/truncate.test.ts", type: "registry:test" }],
 			},
 			{
-				name: "ts/types",
+				name: "types",
 				type: "util",
 				files: [{ path: "src/ts/types.ts" }],
 			},
 			{
-				name: "ts/url",
+				name: "url",
 				type: "util",
 				files: [{ path: "src/ts/url.ts" }, { path: "src/ts/url.test.ts", type: "registry:test" }],
 			},
