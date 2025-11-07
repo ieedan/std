@@ -25,7 +25,7 @@ jobs:
               run: pnpm install
 
             - name: Test
-              run: pnpm dlx vitest --coverage.enabled true
+              run: pnpm vitest --coverage.enabled true
 
             - name: Report Coverage
               # Set if: always() to also generate the report if tests are failing
