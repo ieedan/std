@@ -13,7 +13,13 @@ export default defineConfig({
 				branches: 100,
 				statements: 100,
 			},
-			exclude: ['node_modules/', '**/*.d.ts', '**/*.test.ts', 'vite.config.ts'],
+			exclude: [
+				'node_modules/',
+				'**/*.d.ts',
+				'**/*.test.ts',
+				'vite.config.ts',
+				'jsrepo.config.ts',
+			],
 		},
 	},
 });

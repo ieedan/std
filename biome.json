@@ -10,7 +10,7 @@
 		"attributePosition": "auto"
 	},
 	"files": {
-		"ignore": ["dist", "node_modules", "docs", "blocks-manifest.json", "coverage"]
+		"ignore": ["dist", "node_modules", "docs", "registry.json", "coverage"]
 	},
 	"organizeImports": { "enabled": true },
 	"linter": {
