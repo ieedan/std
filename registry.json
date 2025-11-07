@@ -1,17 +1,11 @@
 {
 	"name": "@ieedan/std",
-	"authors": [
-		"Aidan Bleser"
-	],
+	"authors": ["Aidan Bleser"],
 	"bugs": "https://github.com/ieedan/std/issues",
 	"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
 	"homepage": "https://ieedan.github.io/std/",
 	"repository": "https://github.com/ieedan/std",
-	"tags": [
-		"typescript",
-		"std",
-		"utilities"
-	],
+	"tags": ["typescript", "std", "utilities"],
 	"version": "package",
 	"type": "repository",
 	"items": [
