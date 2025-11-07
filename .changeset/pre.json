@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "std": "5.3.0"
+  },
+  "changesets": []
+}

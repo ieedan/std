@@ -1,5 +1,18 @@
 {
 	"name": "@ieedan/std",
+	"authors": [
+		"Aidan Bleser"
+	],
+	"bugs": "https://github.com/ieedan/std/issues",
+	"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
+	"homepage": "https://ieedan.github.io/std/",
+	"repository": "https://github.com/ieedan/std",
+	"tags": [
+		"typescript",
+		"std",
+		"utilities"
+	],
+	"version": "package",
 	"type": "repository",
 	"items": [
 		{
@@ -7,18 +20,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/result.ts",
@@ -29,15 +31,7 @@
 					"type": "registry:test",
 					"path": "src/ts/result.test.ts",
 					"relativePath": "result.test.ts",
-					"_imports_": [
-						{
-							"import": "./result",
-							"item": "result",
-							"meta": {
-								"filePathRelativeToItem": "result.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -46,18 +40,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/array.ts",
@@ -68,15 +51,7 @@
 					"type": "registry:test",
 					"path": "src/ts/array.test.ts",
 					"relativePath": "array.test.ts",
-					"_imports_": [
-						{
-							"import": "./array",
-							"item": "array",
-							"meta": {
-								"filePathRelativeToItem": "array.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -85,32 +60,18 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
+				{
+					"path": "src/ts/casing.ts",
+					"relativePath": "casing.ts",
+					"_imports_": []
+				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/casing.test.ts",
 					"relativePath": "casing.test.ts",
-					"_imports_": [
-						{
-							"import": "./casing",
-							"item": "casing",
-							"meta": {
-								"filePathRelativeToItem": "casing.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -119,18 +80,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/dispatcher.ts",
@@ -141,15 +91,7 @@
 					"type": "registry:test",
 					"path": "src/ts/dispatcher.test.ts",
 					"relativePath": "dispatcher.test.ts",
-					"_imports_": [
-						{
-							"import": "./dispatcher",
-							"item": "dispatcher",
-							"meta": {
-								"filePathRelativeToItem": "dispatcher.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -158,32 +100,18 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
+				{
+					"path": "src/ts/ipv4-address.ts",
+					"relativePath": "ipv4-address.ts",
+					"_imports_": []
+				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/ipv4-address.test.ts",
 					"relativePath": "ipv4-address.test.ts",
-					"_imports_": [
-						{
-							"import": "./ipv4-address",
-							"item": "ipv4-address",
-							"meta": {
-								"filePathRelativeToItem": "ipv4-address.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -192,52 +120,18 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/math/circle.ts",
 					"relativePath": "circle.ts",
-					"_imports_": [
-						{
-							"import": "./triangles",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "triangles.ts"
-							}
-						},
-						{
-							"import": "./types",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "types.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/math/circle.test.ts",
 					"relativePath": "circle.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "index.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"path": "src/ts/math/conversions.ts",
@@ -248,42 +142,18 @@
 					"type": "registry:test",
 					"path": "src/ts/math/conversions.test.ts",
 					"relativePath": "conversions.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "index.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"path": "src/ts/math/fractions.ts",
 					"relativePath": "fractions.ts",
-					"_imports_": [
-						{
-							"import": "./gcf",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "gcf.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/math/fractions.test.ts",
 					"relativePath": "fractions.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "index.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"path": "src/ts/math/gcf.ts",
@@ -294,42 +164,18 @@
 					"type": "registry:test",
 					"path": "src/ts/math/gcf.test.ts",
 					"relativePath": "gcf.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "index.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"path": "src/ts/math/triangles.ts",
 					"relativePath": "triangles.ts",
-					"_imports_": [
-						{
-							"import": "./conversions",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "conversions.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/math/triangles.test.ts",
 					"relativePath": "triangles.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "index.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"path": "src/ts/math/types.ts",
@@ -339,64 +185,7 @@
 				{
 					"path": "src/ts/math/index.ts",
 					"relativePath": "index.ts",
-					"_imports_": [
-						{
-							"import": "./circle",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "circle.ts"
-							}
-						},
-						{
-							"import": "./conversions",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "conversions.ts"
-							}
-						},
-						{
-							"import": "./fractions",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "fractions.ts"
-							}
-						},
-						{
-							"import": "./gcf",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "gcf.ts"
-							}
-						},
-						{
-							"import": "./triangles",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "triangles.ts"
-							}
-						},
-						{
-							"import": "./gcf",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "gcf.ts"
-							}
-						},
-						{
-							"import": "./gcf",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "gcf.ts"
-							}
-						},
-						{
-							"import": "./types",
-							"item": "math",
-							"meta": {
-								"filePathRelativeToItem": "types.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -405,18 +194,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/pad.ts",
@@ -427,15 +205,7 @@
 					"type": "registry:test",
 					"path": "src/ts/pad.test.ts",
 					"relativePath": "pad.test.ts",
-					"_imports_": [
-						{
-							"import": "./pad",
-							"item": "pad",
-							"meta": {
-								"filePathRelativeToItem": "pad.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -444,18 +214,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/perishable-list.ts",
@@ -466,15 +225,7 @@
 					"type": "registry:test",
 					"path": "src/ts/perishable-list.test.ts",
 					"relativePath": "perishable-list.test.ts",
-					"_imports_": [
-						{
-							"import": "./perishable-list",
-							"item": "perishable-list",
-							"meta": {
-								"filePathRelativeToItem": "perishable-list.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -483,18 +234,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/promises.ts",
@@ -505,15 +245,7 @@
 					"type": "registry:test",
 					"path": "src/ts/promises.test.ts",
 					"relativePath": "promises.test.ts",
-					"_imports_": [
-						{
-							"import": "./promises",
-							"item": "promises",
-							"meta": {
-								"filePathRelativeToItem": "promises.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -522,18 +254,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/rand.ts",
@@ -544,15 +265,7 @@
 					"type": "registry:test",
 					"path": "src/ts/rand.test.ts",
 					"relativePath": "rand.test.ts",
-					"_imports_": [
-						{
-							"import": "./rand",
-							"item": "rand",
-							"meta": {
-								"filePathRelativeToItem": "rand.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -561,18 +274,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/sleep.ts",
@@ -583,15 +285,7 @@
 					"type": "registry:test",
 					"path": "src/ts/sleep.test.ts",
 					"relativePath": "sleep.test.ts",
-					"_imports_": [
-						{
-							"import": "./sleep",
-							"item": "sleep",
-							"meta": {
-								"filePathRelativeToItem": "sleep.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -600,18 +294,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/stopwatch.ts",
@@ -622,15 +305,7 @@
 					"type": "registry:test",
 					"path": "src/ts/stopwatch.test.ts",
 					"relativePath": "stopwatch.test.ts",
-					"_imports_": [
-						{
-							"import": "./stopwatch",
-							"item": "stopwatch",
-							"meta": {
-								"filePathRelativeToItem": "stopwatch.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -639,18 +314,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/strings.ts",
@@ -661,15 +325,7 @@
 					"type": "registry:test",
 					"path": "src/ts/strings.test.ts",
 					"relativePath": "strings.test.ts",
-					"_imports_": [
-						{
-							"import": "./strings",
-							"item": "strings",
-							"meta": {
-								"filePathRelativeToItem": "strings.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -677,48 +333,19 @@
 			"name": "time",
 			"type": "util",
 			"add": "when-added",
-			"registryDependencies": [
-				"types"
-			],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"registryDependencies": [],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/time.ts",
 					"relativePath": "time.ts",
-					"_imports_": [
-						{
-							"import": "./types",
-							"item": "types",
-							"meta": {
-								"filePathRelativeToItem": "types.ts"
-							}
-						}
-					]
+					"_imports_": []
 				},
 				{
 					"type": "registry:test",
 					"path": "src/ts/time.test.ts",
 					"relativePath": "time.test.ts",
-					"_imports_": [
-						{
-							"import": "./time",
-							"item": "time",
-							"meta": {
-								"filePathRelativeToItem": "time.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -727,18 +354,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/truncate.ts",
@@ -749,15 +365,7 @@
 					"type": "registry:test",
 					"path": "src/ts/truncate.test.ts",
 					"relativePath": "truncate.test.ts",
-					"_imports_": [
-						{
-							"import": "./truncate",
-							"item": "truncate",
-							"meta": {
-								"filePathRelativeToItem": "truncate.ts"
-							}
-						}
-					]
+					"_imports_": []
 				}
 			]
 		},
@@ -766,7 +374,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/types.ts",
@@ -780,18 +388,7 @@
 			"type": "util",
 			"add": "when-added",
 			"registryDependencies": [],
-			"remoteDependencies": [
-				{
-					"ecosystem": "js",
-					"name": "vitest",
-					"version": "^3.1.3",
-					"dev": true
-				},
-				{
-					"ecosystem": "js",
-					"name": "vitest"
-				}
-			],
+			"dependencies": [],
 			"files": [
 				{
 					"path": "src/ts/url.ts",
@@ -802,15 +399,22 @@
 					"type": "registry:test",
 					"path": "src/ts/url.test.ts",
 					"relativePath": "url.test.ts",
-					"_imports_": [
-						{
-							"import": "./url",
-							"item": "url",
-							"meta": {
-								"filePathRelativeToItem": "url.ts"
-							}
-						}
-					]
+					"_imports_": []
+				}
+			]
+		},
+		{
+			"name": "Cursor Rule",
+			"type": "rule",
+			"add": "optionally-on-init",
+			"registryDependencies": [],
+			"dependencies": [],
+			"files": [
+				{
+					"path": "rules/typescript-utility-functions.mdc",
+					"relativePath": "typescript-utility-functions.mdc",
+					"_imports_": [],
+					"target": ".cursor/rules/typescript-utility-functions.mdc"
 				}
 			]
 		}

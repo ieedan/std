@@ -1,9 +1,16 @@
-import { defineConfig } from "jsrepov3";
-import { repository } from "jsrepov3/outputs";
+import { defineConfig } from "jsrepo";
+import { repository } from "jsrepo/outputs";
 
 export default defineConfig({
 	registry: {
 		name: "@ieedan/std",
+		version: "package",
+		authors: ["Aidan Bleser"],
+		bugs: "https://github.com/ieedan/std/issues",
+		description: "Fully tested and documented TypeScript utilities brokered by jsrepo.",
+		homepage: "https://ieedan.github.io/std/",
+		repository: "https://github.com/ieedan/std",
+		tags: ["typescript", "std", "utilities"],
 		outputs: [repository({ format: true })],
 		items: [
 			{
@@ -109,6 +116,18 @@ export default defineConfig({
 				name: "url",
 				type: "util",
 				files: [{ path: "src/ts/url.ts" }, { path: "src/ts/url.test.ts", type: "registry:test" }],
+			},
+			{
+				name: "Cursor Rule",
+				type: "rule",
+				add: 'optionally-on-init',
+				dependencyResolution: 'manual',
+				files: [
+					{
+						path: "rules/typescript-utility-functions.mdc",
+						target: ".cursor/rules/typescript-utility-functions.mdc",
+					},
+				],
 			},
 		],
 	},
