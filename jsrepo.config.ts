@@ -54,6 +54,22 @@ export default defineConfig({
 				],
 			},
 			{
+				name: 'is-letter',
+				type: 'util',
+				files: [
+					{ path: 'src/ts/is-letter.ts' },
+					{ path: 'src/ts/is-letter.test.ts', type: 'registry:test' },
+				],
+			},
+			{
+				name: 'is-number',
+				type: 'util',
+				files: [
+					{ path: 'src/ts/is-number.ts' },
+					{ path: 'src/ts/is-number.test.ts', type: 'registry:test' },
+				],
+			},
+			{
 				name: 'math',
 				type: 'util',
 				files: [
