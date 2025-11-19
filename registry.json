@@ -21,11 +21,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/result.ts",
-					"relativePath": "result.ts",
+					"type": "util",
+					"role": "file",
+					"path": "result.ts",
+					"relativePath": "src/ts/result.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -33,18 +41,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/result.test.ts",
-					"relativePath": "result.test.ts",
+					"role": "file",
+					"path": "result.test.ts",
+					"relativePath": "src/ts/result.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -54,11 +57,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/array.ts",
-					"relativePath": "array.ts",
+					"type": "util",
+					"role": "file",
+					"path": "array.ts",
+					"relativePath": "src/ts/array.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -66,18 +77,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/array.test.ts",
-					"relativePath": "array.test.ts",
+					"role": "file",
+					"path": "array.test.ts",
+					"relativePath": "src/ts/array.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -89,18 +95,28 @@
 				"is-letter"
 			],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/casing.ts",
-					"relativePath": "casing.ts",
+					"type": "util",
+					"role": "file",
+					"path": "casing.ts",
+					"relativePath": "src/ts/casing.ts",
 					"_imports_": [
 						{
 							"import": "./is-letter",
 							"item": "is-letter",
-							"meta": {
-								"filePathRelativeToItem": "is-letter.ts"
-							}
+							"file": {
+								"type": "util",
+								"path": "is-letter.ts"
+							},
+							"meta": {}
 						}
 					],
 					"registryDependencies": [],
@@ -109,18 +125,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/casing.test.ts",
-					"relativePath": "casing.test.ts",
+					"role": "file",
+					"path": "casing.test.ts",
+					"relativePath": "src/ts/casing.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -130,11 +141,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/dispatcher.ts",
-					"relativePath": "dispatcher.ts",
+					"type": "util",
+					"role": "file",
+					"path": "dispatcher.ts",
+					"relativePath": "src/ts/dispatcher.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -142,18 +161,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/dispatcher.test.ts",
-					"relativePath": "dispatcher.test.ts",
+					"role": "file",
+					"path": "dispatcher.test.ts",
+					"relativePath": "src/ts/dispatcher.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -166,25 +180,37 @@
 				"result"
 			],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/ipv4-address.ts",
-					"relativePath": "ipv4-address.ts",
+					"type": "util",
+					"role": "file",
+					"path": "ipv4-address.ts",
+					"relativePath": "src/ts/ipv4-address.ts",
 					"_imports_": [
 						{
 							"import": "./is-number",
 							"item": "is-number",
-							"meta": {
-								"filePathRelativeToItem": "is-number.ts"
-							}
+							"file": {
+								"type": "util",
+								"path": "is-number.ts"
+							},
+							"meta": {}
 						},
 						{
 							"import": "./result",
 							"item": "result",
-							"meta": {
-								"filePathRelativeToItem": "result.ts"
-							}
+							"file": {
+								"type": "util",
+								"path": "result.ts"
+							},
+							"meta": {}
 						}
 					],
 					"registryDependencies": [],
@@ -193,18 +219,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/ipv4-address.test.ts",
-					"relativePath": "ipv4-address.test.ts",
+					"role": "file",
+					"path": "ipv4-address.test.ts",
+					"relativePath": "src/ts/ipv4-address.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -214,11 +235,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/is-letter.ts",
-					"relativePath": "is-letter.ts",
+					"type": "util",
+					"role": "file",
+					"path": "is-letter.ts",
+					"relativePath": "src/ts/is-letter.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -226,18 +255,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/is-letter.test.ts",
-					"relativePath": "is-letter.test.ts",
+					"role": "file",
+					"path": "is-letter.test.ts",
+					"relativePath": "src/ts/is-letter.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -247,11 +271,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/is-number.ts",
-					"relativePath": "is-number.ts",
+					"type": "util",
+					"role": "file",
+					"path": "is-number.ts",
+					"relativePath": "src/ts/is-number.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -259,18 +291,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/is-number.test.ts",
-					"relativePath": "is-number.test.ts",
+					"role": "file",
+					"path": "is-number.test.ts",
+					"relativePath": "src/ts/is-number.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -280,11 +307,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/math/circle.ts",
-					"relativePath": "circle.ts",
+					"type": "util",
+					"role": "file",
+					"path": "circle.ts",
+					"relativePath": "src/ts/math/circle.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -292,22 +327,19 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/math/circle.test.ts",
-					"relativePath": "circle.test.ts",
+					"role": "file",
+					"path": "circle.test.ts",
+					"relativePath": "src/ts/math/circle.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				},
 				{
-					"path": "src/ts/math/conversions.ts",
-					"relativePath": "conversions.ts",
+					"type": "util",
+					"role": "file",
+					"path": "conversions.ts",
+					"relativePath": "src/ts/math/conversions.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -315,22 +347,19 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/math/conversions.test.ts",
-					"relativePath": "conversions.test.ts",
+					"role": "file",
+					"path": "conversions.test.ts",
+					"relativePath": "src/ts/math/conversions.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				},
 				{
-					"path": "src/ts/math/fractions.ts",
-					"relativePath": "fractions.ts",
+					"type": "util",
+					"role": "file",
+					"path": "fractions.ts",
+					"relativePath": "src/ts/math/fractions.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -338,22 +367,19 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/math/fractions.test.ts",
-					"relativePath": "fractions.test.ts",
+					"role": "file",
+					"path": "fractions.test.ts",
+					"relativePath": "src/ts/math/fractions.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				},
 				{
-					"path": "src/ts/math/gcf.ts",
-					"relativePath": "gcf.ts",
+					"type": "util",
+					"role": "file",
+					"path": "gcf.ts",
+					"relativePath": "src/ts/math/gcf.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -361,22 +387,19 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/math/gcf.test.ts",
-					"relativePath": "gcf.test.ts",
+					"role": "file",
+					"path": "gcf.test.ts",
+					"relativePath": "src/ts/math/gcf.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				},
 				{
-					"path": "src/ts/math/triangles.ts",
-					"relativePath": "triangles.ts",
+					"type": "util",
+					"role": "file",
+					"path": "triangles.ts",
+					"relativePath": "src/ts/math/triangles.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -384,30 +407,29 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/math/triangles.test.ts",
-					"relativePath": "triangles.test.ts",
-					"_imports_": [],
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
-				},
-				{
-					"path": "src/ts/math/types.ts",
-					"relativePath": "types.ts",
+					"role": "file",
+					"path": "triangles.test.ts",
+					"relativePath": "src/ts/math/triangles.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
 					"devDependencies": []
 				},
 				{
-					"path": "src/ts/math/index.ts",
-					"relativePath": "index.ts",
+					"type": "util",
+					"role": "file",
+					"path": "types.ts",
+					"relativePath": "src/ts/math/types.ts",
+					"_imports_": [],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"type": "util",
+					"role": "file",
+					"path": "index.ts",
+					"relativePath": "src/ts/math/index.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -421,11 +443,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/pad.ts",
-					"relativePath": "pad.ts",
+					"type": "util",
+					"role": "file",
+					"path": "pad.ts",
+					"relativePath": "src/ts/pad.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -433,18 +463,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/pad.test.ts",
-					"relativePath": "pad.test.ts",
+					"role": "file",
+					"path": "pad.test.ts",
+					"relativePath": "src/ts/pad.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -454,11 +479,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/perishable-list.ts",
-					"relativePath": "perishable-list.ts",
+					"type": "util",
+					"role": "file",
+					"path": "perishable-list.ts",
+					"relativePath": "src/ts/perishable-list.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -466,18 +499,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/perishable-list.test.ts",
-					"relativePath": "perishable-list.test.ts",
+					"role": "file",
+					"path": "perishable-list.test.ts",
+					"relativePath": "src/ts/perishable-list.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -487,11 +515,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/promises.ts",
-					"relativePath": "promises.ts",
+					"type": "util",
+					"role": "file",
+					"path": "promises.ts",
+					"relativePath": "src/ts/promises.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -499,18 +535,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/promises.test.ts",
-					"relativePath": "promises.test.ts",
+					"role": "file",
+					"path": "promises.test.ts",
+					"relativePath": "src/ts/promises.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -520,11 +551,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/rand.ts",
-					"relativePath": "rand.ts",
+					"type": "util",
+					"role": "file",
+					"path": "rand.ts",
+					"relativePath": "src/ts/rand.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -532,18 +571,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/rand.test.ts",
-					"relativePath": "rand.test.ts",
+					"role": "file",
+					"path": "rand.test.ts",
+					"relativePath": "src/ts/rand.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -553,11 +587,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/sleep.ts",
-					"relativePath": "sleep.ts",
+					"type": "util",
+					"role": "file",
+					"path": "sleep.ts",
+					"relativePath": "src/ts/sleep.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -565,18 +607,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/sleep.test.ts",
-					"relativePath": "sleep.test.ts",
+					"role": "file",
+					"path": "sleep.test.ts",
+					"relativePath": "src/ts/sleep.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -586,11 +623,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/stopwatch.ts",
-					"relativePath": "stopwatch.ts",
+					"type": "util",
+					"role": "file",
+					"path": "stopwatch.ts",
+					"relativePath": "src/ts/stopwatch.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -598,18 +643,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/stopwatch.test.ts",
-					"relativePath": "stopwatch.test.ts",
+					"role": "file",
+					"path": "stopwatch.test.ts",
+					"relativePath": "src/ts/stopwatch.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -619,11 +659,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/strings.ts",
-					"relativePath": "strings.ts",
+					"type": "util",
+					"role": "file",
+					"path": "strings.ts",
+					"relativePath": "src/ts/strings.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -631,18 +679,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/strings.test.ts",
-					"relativePath": "strings.test.ts",
+					"role": "file",
+					"path": "strings.test.ts",
+					"relativePath": "src/ts/strings.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -654,18 +697,28 @@
 				"types"
 			],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/time.ts",
-					"relativePath": "time.ts",
+					"type": "util",
+					"role": "file",
+					"path": "time.ts",
+					"relativePath": "src/ts/time.ts",
 					"_imports_": [
 						{
 							"import": "./types",
 							"item": "types",
-							"meta": {
-								"filePathRelativeToItem": "types.ts"
-							}
+							"file": {
+								"type": "util",
+								"path": "types.ts"
+							},
+							"meta": {}
 						}
 					],
 					"registryDependencies": [],
@@ -674,18 +727,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/time.test.ts",
-					"relativePath": "time.test.ts",
+					"role": "file",
+					"path": "time.test.ts",
+					"relativePath": "src/ts/time.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -695,11 +743,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/truncate.ts",
-					"relativePath": "truncate.ts",
+					"type": "util",
+					"role": "file",
+					"path": "truncate.ts",
+					"relativePath": "src/ts/truncate.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -707,18 +763,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/truncate.test.ts",
-					"relativePath": "truncate.test.ts",
+					"role": "file",
+					"path": "truncate.test.ts",
+					"relativePath": "src/ts/truncate.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -731,8 +782,10 @@
 			"devDependencies": [],
 			"files": [
 				{
-					"path": "src/ts/types.ts",
-					"relativePath": "types.ts",
+					"type": "util",
+					"role": "file",
+					"path": "types.ts",
+					"relativePath": "src/ts/types.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -746,11 +799,19 @@
 			"add": "when-added",
 			"registryDependencies": [],
 			"dependencies": [],
-			"devDependencies": [],
+			"devDependencies": [
+				{
+					"ecosystem": "js",
+					"name": "vitest",
+					"version": "^3.2.4"
+				}
+			],
 			"files": [
 				{
-					"path": "src/ts/url.ts",
-					"relativePath": "url.ts",
+					"type": "util",
+					"role": "file",
+					"path": "url.ts",
+					"relativePath": "src/ts/url.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -758,18 +819,13 @@
 				},
 				{
 					"type": "registry:test",
-					"path": "src/ts/url.test.ts",
-					"relativePath": "url.test.ts",
+					"role": "file",
+					"path": "url.test.ts",
+					"relativePath": "src/ts/url.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
+					"devDependencies": []
 				}
 			]
 		},
@@ -782,8 +838,10 @@
 			"devDependencies": [],
 			"files": [
 				{
-					"path": "rules/typescript-utility-functions.mdc",
-					"relativePath": "typescript-utility-functions.mdc",
+					"type": "rule",
+					"role": "file",
+					"path": "typescript-utility-functions.mdc",
+					"relativePath": "rules/typescript-utility-functions.mdc",
 					"_imports_": [],
 					"target": ".cursor/rules/typescript-utility-functions.mdc",
 					"registryDependencies": [],
