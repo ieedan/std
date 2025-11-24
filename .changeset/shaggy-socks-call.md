@@ -1,6 +1,0 @@
----
-"std": patch
----
-
-bump jsrepo
-  
