@@ -1,5 +1,17 @@
 # std
 
+## 5.3.1
+### Patch Changes
+
+
+- feat: jsrepo v3 beta ([#111](https://github.com/ieedan/std/pull/111))
+
+
+- bump jsrepo ([#110](https://github.com/ieedan/std/pull/110))
+
+
+- bump jsrepo ([#110](https://github.com/ieedan/std/pull/110))
+
 ## 5.3.1-beta.2
 ### Patch Changes
 
