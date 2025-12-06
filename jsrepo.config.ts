@@ -18,7 +18,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/result.ts' },
-					{ path: 'src/ts/result.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/result.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -26,7 +26,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/array.ts' },
-					{ path: 'src/ts/array.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/array.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -34,7 +34,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/casing.ts' },
-					{ path: 'src/ts/casing.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/casing.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -42,7 +42,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/dispatcher.ts' },
-					{ path: 'src/ts/dispatcher.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/dispatcher.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -50,7 +50,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/ipv4-address.ts' },
-					{ path: 'src/ts/ipv4-address.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/ipv4-address.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -58,7 +58,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/is-letter.ts' },
-					{ path: 'src/ts/is-letter.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/is-letter.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -66,7 +66,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/is-number.ts' },
-					{ path: 'src/ts/is-number.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/is-number.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -74,15 +74,15 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/math/circle.ts' },
-					{ path: 'src/ts/math/circle.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/math/circle.test.ts', role: 'test' },
 					{ path: 'src/ts/math/conversions.ts' },
-					{ path: 'src/ts/math/conversions.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/math/conversions.test.ts', role: 'test' },
 					{ path: 'src/ts/math/fractions.ts' },
-					{ path: 'src/ts/math/fractions.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/math/fractions.test.ts', role: 'test' },
 					{ path: 'src/ts/math/gcf.ts' },
-					{ path: 'src/ts/math/gcf.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/math/gcf.test.ts', role: 'test' },
 					{ path: 'src/ts/math/triangles.ts' },
-					{ path: 'src/ts/math/triangles.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/math/triangles.test.ts', role: 'test' },
 					{ path: 'src/ts/math/types.ts' },
 					{ path: 'src/ts/math/index.ts' },
 				],
@@ -92,7 +92,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/pad.ts' },
-					{ path: 'src/ts/pad.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/pad.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -100,7 +100,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/perishable-list.ts' },
-					{ path: 'src/ts/perishable-list.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/perishable-list.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -108,7 +108,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/promises.ts' },
-					{ path: 'src/ts/promises.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/promises.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -116,7 +116,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/rand.ts' },
-					{ path: 'src/ts/rand.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/rand.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -124,7 +124,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/sleep.ts' },
-					{ path: 'src/ts/sleep.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/sleep.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -132,7 +132,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/stopwatch.ts' },
-					{ path: 'src/ts/stopwatch.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/stopwatch.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -140,7 +140,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/strings.ts' },
-					{ path: 'src/ts/strings.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/strings.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -148,7 +148,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/time.ts' },
-					{ path: 'src/ts/time.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/time.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -156,7 +156,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/truncate.ts' },
-					{ path: 'src/ts/truncate.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/truncate.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -169,7 +169,7 @@ export default defineConfig({
 				type: 'util',
 				files: [
 					{ path: 'src/ts/url.ts' },
-					{ path: 'src/ts/url.test.ts', type: 'registry:test' },
+					{ path: 'src/ts/url.test.ts', role: 'test' },
 				],
 			},
 			{
