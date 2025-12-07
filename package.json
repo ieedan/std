@@ -21,7 +21,7 @@
 		"@svitejs/changesets-changelog-github-compact": "^1.2.0",
 		"@types/node": "^22.19.0",
 		"@vitest/coverage-v8": "^3.2.4",
-		"jsrepo": "3.0.0-beta.25",
+		"jsrepo": "3.0.8",
 		"typedoc": "^0.28.14",
 		"typescript": "^5.9.3",
 		"vitest": "^3.2.4"
@@ -30,6 +30,9 @@
 		"typedoc-material-theme": "^1.4.1"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"esbuild"
+		]
 	}
 }
