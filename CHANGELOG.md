@@ -1,5 +1,11 @@
 # std
 
+## 5.3.2
+### Patch Changes
+
+
+- Mark all test files with role: 'test' so they are only installed when requested ([#117](https://github.com/ieedan/std/pull/117))
+
 ## 5.3.1
 ### Patch Changes
 
