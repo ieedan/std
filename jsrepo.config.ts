@@ -90,10 +90,7 @@ export default defineConfig({
 			{
 				name: 'pad',
 				type: 'util',
-				files: [
-					{ path: 'src/ts/pad.ts' },
-					{ path: 'src/ts/pad.test.ts', role: 'test' },
-				],
+				files: [{ path: 'src/ts/pad.ts' }, { path: 'src/ts/pad.test.ts', role: 'test' }],
 			},
 			{
 				name: 'perishable-list',
@@ -114,10 +111,7 @@ export default defineConfig({
 			{
 				name: 'rand',
 				type: 'util',
-				files: [
-					{ path: 'src/ts/rand.ts' },
-					{ path: 'src/ts/rand.test.ts', role: 'test' },
-				],
+				files: [{ path: 'src/ts/rand.ts' }, { path: 'src/ts/rand.test.ts', role: 'test' }],
 			},
 			{
 				name: 'sleep',
@@ -146,10 +140,7 @@ export default defineConfig({
 			{
 				name: 'time',
 				type: 'util',
-				files: [
-					{ path: 'src/ts/time.ts' },
-					{ path: 'src/ts/time.test.ts', role: 'test' },
-				],
+				files: [{ path: 'src/ts/time.ts' }, { path: 'src/ts/time.test.ts', role: 'test' }],
 			},
 			{
 				name: 'truncate',
@@ -167,10 +158,7 @@ export default defineConfig({
 			{
 				name: 'url',
 				type: 'util',
-				files: [
-					{ path: 'src/ts/url.ts' },
-					{ path: 'src/ts/url.test.ts', role: 'test' },
-				],
+				files: [{ path: 'src/ts/url.ts' }, { path: 'src/ts/url.test.ts', role: 'test' }],
 			},
 			{
 				name: 'Cursor Rule',
