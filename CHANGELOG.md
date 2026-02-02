@@ -1,5 +1,11 @@
 # std
 
+## 5.3.3
+### Patch Changes
+
+
+- chore: bump jsrepo ([#119](https://github.com/ieedan/std/pull/119))
+
 ## 5.3.2
 ### Patch Changes
 
