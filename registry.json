@@ -312,7 +312,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "circle.ts",
+					"path": "math/circle.ts",
 					"relativePath": "src/ts/math/circle.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -322,7 +322,7 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "circle.test.ts",
+					"path": "math/circle.test.ts",
 					"relativePath": "src/ts/math/circle.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -338,7 +338,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "conversions.ts",
+					"path": "math/conversions.ts",
 					"relativePath": "src/ts/math/conversions.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -348,7 +348,7 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "conversions.test.ts",
+					"path": "math/conversions.test.ts",
 					"relativePath": "src/ts/math/conversions.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -364,7 +364,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "fractions.ts",
+					"path": "math/fractions.ts",
 					"relativePath": "src/ts/math/fractions.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -374,7 +374,7 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "fractions.test.ts",
+					"path": "math/fractions.test.ts",
 					"relativePath": "src/ts/math/fractions.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -390,7 +390,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "gcf.ts",
+					"path": "math/gcf.ts",
 					"relativePath": "src/ts/math/gcf.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -400,7 +400,7 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "gcf.test.ts",
+					"path": "math/gcf.test.ts",
 					"relativePath": "src/ts/math/gcf.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -416,7 +416,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "triangles.ts",
+					"path": "math/triangles.ts",
 					"relativePath": "src/ts/math/triangles.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -426,7 +426,7 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "triangles.test.ts",
+					"path": "math/triangles.test.ts",
 					"relativePath": "src/ts/math/triangles.test.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -442,7 +442,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "types.ts",
+					"path": "math/types.ts",
 					"relativePath": "src/ts/math/types.ts",
 					"_imports_": [],
 					"registryDependencies": [],
@@ -452,7 +452,7 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "index.ts",
+					"path": "math/index.ts",
 					"relativePath": "src/ts/math/index.ts",
 					"_imports_": [],
 					"registryDependencies": [],
