@@ -88,8 +88,8 @@ export default defineConfig({
 							{ path: 'triangles.test.ts', role: 'test' },
 							{ path: 'types.ts' },
 							{ path: 'index.ts' },
-						]
-					}
+						],
+					},
 				],
 			},
 			{
