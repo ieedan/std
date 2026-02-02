@@ -73,18 +73,23 @@ export default defineConfig({
 				name: 'math',
 				type: 'util',
 				files: [
-					{ path: 'src/ts/math/circle.ts' },
-					{ path: 'src/ts/math/circle.test.ts', role: 'test' },
-					{ path: 'src/ts/math/conversions.ts' },
-					{ path: 'src/ts/math/conversions.test.ts', role: 'test' },
-					{ path: 'src/ts/math/fractions.ts' },
-					{ path: 'src/ts/math/fractions.test.ts', role: 'test' },
-					{ path: 'src/ts/math/gcf.ts' },
-					{ path: 'src/ts/math/gcf.test.ts', role: 'test' },
-					{ path: 'src/ts/math/triangles.ts' },
-					{ path: 'src/ts/math/triangles.test.ts', role: 'test' },
-					{ path: 'src/ts/math/types.ts' },
-					{ path: 'src/ts/math/index.ts' },
+					{
+						path: 'src/ts/math',
+						files: [
+							{ path: 'circle.ts' },
+							{ path: 'circle.test.ts', role: 'test' },
+							{ path: 'conversions.ts' },
+							{ path: 'conversions.test.ts', role: 'test' },
+							{ path: 'fractions.ts' },
+							{ path: 'fractions.test.ts', role: 'test' },
+							{ path: 'gcf.ts' },
+							{ path: 'gcf.test.ts', role: 'test' },
+							{ path: 'triangles.ts' },
+							{ path: 'triangles.test.ts', role: 'test' },
+							{ path: 'types.ts' },
+							{ path: 'index.ts' },
+						]
+					}
 				],
 			},
 			{
