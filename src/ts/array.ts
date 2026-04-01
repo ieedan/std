@@ -38,13 +38,7 @@ export function fromMap<K, V, T>(map: Map<K, V>, fn: (key: K, value: V) => T): T
  * ```
  */
 export function sum<T>(arr: T[], fn: (item: T) => number): number {
-	let total = 0;
-
-	for (const item of arr) {
-		total = total + fn(item);
-	}
-
-	return total;
+	return arr.reduce((total, item) => total + fn(item), 0);
 }
 
 /** Maps the provided array into a map

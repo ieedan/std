@@ -32,3 +32,35 @@ describe('iEqual', () => {
 		expect(strings.iEqual('a', 'b')).toBe(false);
 	});
 });
+
+describe('truncate', () => {
+	it('Returns string when string length is less than max length', () => {
+		const str = strings.truncate('Hello World!', 100);
+
+		expect(str).toBe('Hello World!');
+	});
+
+	it('Correctly truncates forward', () => {
+		const str = strings.truncate('Hello World!', 5);
+
+		expect(str).toBe('Hello');
+	});
+
+	it('Correctly truncates reverse', () => {
+		const str = strings.truncate('Hello World!', 6, { reverse: true });
+
+		expect(str).toBe('World!');
+	});
+
+	it('Adds ending to the end of forward truncated string', () => {
+		const str = strings.truncate('Hello World!', 5, { ending: '...' });
+
+		expect(str).toBe('Hello...');
+	});
+
+	it('Adds ending to the start of a reverse truncated string', () => {
+		const str = strings.truncate('Hello World!', 6, { ending: '...', reverse: true });
+
+		expect(str).toBe('...World!');
+	});
+});
