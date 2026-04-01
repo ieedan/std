@@ -200,6 +200,64 @@
 			]
 		},
 		{
+			"name": "lines",
+			"type": "util",
+			"add": "when-added",
+			"registryDependencies": [
+				"pad"
+			],
+			"dependencies": [],
+			"devDependencies": [],
+			"files": [
+				{
+					"type": "util",
+					"role": "file",
+					"path": "lines.ts",
+					"relativePath": "src/ts/lines.ts",
+					"_imports_": [
+						{
+							"import": "./pad",
+							"item": "pad",
+							"file": {
+								"type": "util",
+								"path": "pad.ts"
+							},
+							"meta": {}
+						}
+					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"type": "util",
+					"role": "test",
+					"path": "lines.test.ts",
+					"relativePath": "src/ts/lines.test.ts",
+					"_imports_": [
+						{
+							"import": "./lines",
+							"item": "lines",
+							"file": {
+								"type": "util",
+								"path": "lines.ts"
+							},
+							"meta": {}
+						}
+					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": [
+						{
+							"ecosystem": "js",
+							"name": "vitest",
+							"version": "^3.2.4"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "math",
 			"type": "util",
 			"add": "when-added",
@@ -207,6 +265,32 @@
 			"dependencies": [],
 			"devDependencies": [],
 			"files": [
+				{
+					"type": "util",
+					"role": "test",
+					"path": "math/circle.test.ts",
+					"relativePath": "src/ts/math/circle.test.ts",
+					"_imports_": [
+						{
+							"import": ".",
+							"item": "math",
+							"file": {
+								"type": "util",
+								"path": "math/index.ts"
+							},
+							"meta": {}
+						}
+					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": [
+						{
+							"ecosystem": "js",
+							"name": "vitest",
+							"version": "^3.2.4"
+						}
+					]
+				},
 				{
 					"type": "util",
 					"role": "file",
@@ -239,8 +323,8 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "math/circle.test.ts",
-					"relativePath": "src/ts/math/circle.test.ts",
+					"path": "math/conversions.test.ts",
+					"relativePath": "src/ts/math/conversions.test.ts",
 					"_imports_": [
 						{
 							"import": ".",
@@ -275,8 +359,8 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "math/conversions.test.ts",
-					"relativePath": "src/ts/math/conversions.test.ts",
+					"path": "math/fractions.test.ts",
+					"relativePath": "src/ts/math/fractions.test.ts",
 					"_imports_": [
 						{
 							"import": ".",
@@ -321,42 +405,6 @@
 				{
 					"type": "util",
 					"role": "test",
-					"path": "math/fractions.test.ts",
-					"relativePath": "src/ts/math/fractions.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"file": {
-								"type": "util",
-								"path": "math/index.ts"
-							},
-							"meta": {}
-						}
-					],
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
-				},
-				{
-					"type": "util",
-					"role": "file",
-					"path": "math/gcf.ts",
-					"relativePath": "src/ts/math/gcf.ts",
-					"_imports_": [],
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"type": "util",
-					"role": "test",
 					"path": "math/gcf.test.ts",
 					"relativePath": "src/ts/math/gcf.test.ts",
 					"_imports_": [
@@ -383,54 +431,8 @@
 				{
 					"type": "util",
 					"role": "file",
-					"path": "math/triangles.ts",
-					"relativePath": "src/ts/math/triangles.ts",
-					"_imports_": [
-						{
-							"import": "./conversions",
-							"item": "math",
-							"file": {
-								"type": "util",
-								"path": "math/conversions.ts"
-							},
-							"meta": {}
-						}
-					],
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"type": "util",
-					"role": "test",
-					"path": "math/triangles.test.ts",
-					"relativePath": "src/ts/math/triangles.test.ts",
-					"_imports_": [
-						{
-							"import": ".",
-							"item": "math",
-							"file": {
-								"type": "util",
-								"path": "math/index.ts"
-							},
-							"meta": {}
-						}
-					],
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": [
-						{
-							"ecosystem": "js",
-							"name": "vitest",
-							"version": "^3.2.4"
-						}
-					]
-				},
-				{
-					"type": "util",
-					"role": "file",
-					"path": "math/types.ts",
-					"relativePath": "src/ts/math/types.ts",
+					"path": "math/gcf.ts",
+					"relativePath": "src/ts/math/gcf.ts",
 					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
@@ -497,6 +499,62 @@
 							"meta": {}
 						}
 					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"type": "util",
+					"role": "test",
+					"path": "math/triangles.test.ts",
+					"relativePath": "src/ts/math/triangles.test.ts",
+					"_imports_": [
+						{
+							"import": ".",
+							"item": "math",
+							"file": {
+								"type": "util",
+								"path": "math/index.ts"
+							},
+							"meta": {}
+						}
+					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": [
+						{
+							"ecosystem": "js",
+							"name": "vitest",
+							"version": "^3.2.4"
+						}
+					]
+				},
+				{
+					"type": "util",
+					"role": "file",
+					"path": "math/triangles.ts",
+					"relativePath": "src/ts/math/triangles.ts",
+					"_imports_": [
+						{
+							"import": "./conversions",
+							"item": "math",
+							"file": {
+								"type": "util",
+								"path": "math/conversions.ts"
+							},
+							"meta": {}
+						}
+					],
+					"registryDependencies": [],
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"type": "util",
+					"role": "file",
+					"path": "math/types.ts",
+					"relativePath": "src/ts/math/types.ts",
+					"_imports_": [],
 					"registryDependencies": [],
 					"dependencies": [],
 					"devDependencies": []
@@ -900,27 +958,6 @@
 							"version": "^3.2.4"
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Cursor Rule",
-			"type": "rule",
-			"add": "optionally-on-init",
-			"registryDependencies": [],
-			"dependencies": [],
-			"devDependencies": [],
-			"files": [
-				{
-					"type": "rule",
-					"role": "file",
-					"path": "typescript-utility-functions.mdc",
-					"relativePath": "rules/typescript-utility-functions.mdc",
-					"_imports_": [],
-					"target": ".cursor/rules/typescript-utility-functions.mdc",
-					"registryDependencies": [],
-					"dependencies": [],
-					"devDependencies": []
 				}
 			]
 		}

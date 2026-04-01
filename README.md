@@ -26,6 +26,7 @@ pnpm dlx jsrepo add array
 | [casing](https://github.com/ieedan/std/blob/main/src/ts/casing.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [dispatcher](https://github.com/ieedan/std/blob/main/src/ts/dispatcher.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [is-number](https://github.com/ieedan/std/blob/main/src/ts/is-number.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
+| [lines](https://github.com/ieedan/std/blob/main/src/ts/lines.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [math](https://github.com/ieedan/std/blob/main/src/ts/math/circle.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [pad](https://github.com/ieedan/std/blob/main/src/ts/pad.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [perishable-list](https://github.com/ieedan/std/blob/main/src/ts/perishable-list.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
@@ -36,4 +37,3 @@ pnpm dlx jsrepo add array
 | [time](https://github.com/ieedan/std/blob/main/src/ts/time.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [types](https://github.com/ieedan/std/blob/main/src/ts/types.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
 | [url](https://github.com/ieedan/std/blob/main/src/ts/url.ts) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |
-| [Cursor Rule](https://github.com/ieedan/std/blob/main/rules/typescript-utility-functions.mdc) | ![Tests](https://raw.githubusercontent.com/ieedan/std/refs/heads/badges/badges/coverage-total.svg) |

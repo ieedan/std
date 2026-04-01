@@ -1,10 +1,11 @@
 import { defineConfig } from 'jsrepo';
+import { getRegistryItems } from './.jsrepo/registry-items.js';
 import { readmeOutput } from './.jsrepo/readme-output.js';
 import { repository } from 'jsrepo/outputs';
 import { execSync } from 'node:child_process';
 
 export default defineConfig({
-	registry: {
+	registry: ({ cwd }) => ({
 		name: '@ieedan/std',
 		version: 'package',
 		authors: ['Aidan Bleser'],
@@ -14,133 +15,8 @@ export default defineConfig({
 		repository: 'https://github.com/ieedan/std',
 		tags: ['typescript', 'std', 'utilities'],
 		outputs: [repository({ format: true }), readmeOutput()],
-		items: [
-			{
-				name: 'array',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/array.ts' },
-					{ path: 'src/ts/array.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'casing',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/casing.ts' },
-					{ path: 'src/ts/casing.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'dispatcher',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/dispatcher.ts' },
-					{ path: 'src/ts/dispatcher.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'is-number',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/is-number.ts' },
-					{ path: 'src/ts/is-number.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'math',
-				type: 'util',
-				files: [
-					{
-						path: 'src/ts/math',
-						files: [
-							{ path: 'circle.ts' },
-							{ path: 'circle.test.ts', role: 'test' },
-							{ path: 'conversions.ts' },
-							{ path: 'conversions.test.ts', role: 'test' },
-							{ path: 'fractions.ts' },
-							{ path: 'fractions.test.ts', role: 'test' },
-							{ path: 'gcf.ts' },
-							{ path: 'gcf.test.ts', role: 'test' },
-							{ path: 'triangles.ts' },
-							{ path: 'triangles.test.ts', role: 'test' },
-							{ path: 'types.ts' },
-							{ path: 'index.ts' },
-						],
-					},
-				],
-			},
-			{
-				name: 'pad',
-				type: 'util',
-				files: [{ path: 'src/ts/pad.ts' }, { path: 'src/ts/pad.test.ts', role: 'test' }],
-			},
-			{
-				name: 'perishable-list',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/perishable-list.ts' },
-					{ path: 'src/ts/perishable-list.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'rand',
-				type: 'util',
-				files: [{ path: 'src/ts/rand.ts' }, { path: 'src/ts/rand.test.ts', role: 'test' }],
-			},
-			{
-				name: 'sleep',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/sleep.ts' },
-					{ path: 'src/ts/sleep.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'stopwatch',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/stopwatch.ts' },
-					{ path: 'src/ts/stopwatch.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'strings',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/strings.ts' },
-					{ path: 'src/ts/strings.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'time',
-				type: 'util',
-				files: [{ path: 'src/ts/time.ts' }, { path: 'src/ts/time.test.ts', role: 'test' }],
-			},
-			{
-				name: 'types',
-				type: 'util',
-				files: [{ path: 'src/ts/types.ts' }],
-			},
-			{
-				name: 'url',
-				type: 'util',
-				files: [{ path: 'src/ts/url.ts' }, { path: 'src/ts/url.test.ts', role: 'test' }],
-			},
-			{
-				name: 'Cursor Rule',
-				type: 'rule',
-				add: 'optionally-on-init',
-				dependencyResolution: 'manual',
-				files: [
-					{
-						path: 'rules/typescript-utility-functions.mdc',
-						target: '.cursor/rules/typescript-utility-functions.mdc',
-					},
-				],
-			},
-		],
-	},
+		items: getRegistryItems(cwd),
+	}),
 	hooks: {
 		after: async ({ command }) => {
 			if (command === 'build') {
