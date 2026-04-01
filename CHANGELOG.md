@@ -1,5 +1,11 @@
 # std
 
+## 6.0.0
+### Major Changes
+
+
+- breaking: Remove lesser used utilities ([#121](https://github.com/ieedan/std/pull/121))
+
 ## 5.3.3
 ### Patch Changes
 
