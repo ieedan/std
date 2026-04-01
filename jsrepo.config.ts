@@ -1,5 +1,7 @@
 import { defineConfig } from 'jsrepo';
+import { readmeOutput } from './.jsrepo/readme-output.js';
 import { repository } from 'jsrepo/outputs';
+import { execSync } from 'node:child_process';
 
 export default defineConfig({
 	registry: {
@@ -11,7 +13,7 @@ export default defineConfig({
 		homepage: 'https://ieedan.github.io/std/',
 		repository: 'https://github.com/ieedan/std',
 		tags: ['typescript', 'std', 'utilities'],
-		outputs: [repository({ format: true })],
+		outputs: [repository({ format: true }), readmeOutput()],
 		items: [
 			{
 				name: 'array',
@@ -138,5 +140,12 @@ export default defineConfig({
 				],
 			},
 		],
+	},
+	hooks: {
+		after: async ({ command }) => {
+			if (command === 'build') {
+				execSync('pnpm format', { stdio: 'inherit' });
+			}
+		},
 	},
 });

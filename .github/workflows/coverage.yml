@@ -7,6 +7,8 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
 
         steps:
             - uses: actions/checkout@v4
@@ -23,8 +25,19 @@ jobs:
             - name: Run tests with coverage
               run: pnpm coverage
 
+            - name: Ensure badges branch exists
+              run: |
+                  git fetch origin
+                  if git rev-parse --verify origin/badges >/dev/null 2>&1; then
+                    echo "Remote branch badges already exists"
+                  else
+                    git branch badges "${GITHUB_SHA}"
+                    git push origin badges
+                  fi
+
             - name: Coverage Badges
               uses: jpb06/coverage-badges-action@latest
               with:
                   branches: main
                   badges-icon: vitest
+                  target-branch: badges
