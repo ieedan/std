@@ -14,14 +14,6 @@ export default defineConfig({
 		outputs: [repository({ format: true })],
 		items: [
 			{
-				name: 'result',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/result.ts' },
-					{ path: 'src/ts/result.test.ts', role: 'test' },
-				],
-			},
-			{
 				name: 'array',
 				type: 'util',
 				files: [
@@ -43,22 +35,6 @@ export default defineConfig({
 				files: [
 					{ path: 'src/ts/dispatcher.ts' },
 					{ path: 'src/ts/dispatcher.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'ipv4-address',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/ipv4-address.ts' },
-					{ path: 'src/ts/ipv4-address.test.ts', role: 'test' },
-				],
-			},
-			{
-				name: 'is-letter',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/is-letter.ts' },
-					{ path: 'src/ts/is-letter.test.ts', role: 'test' },
 				],
 			},
 			{
@@ -106,14 +82,6 @@ export default defineConfig({
 				],
 			},
 			{
-				name: 'promises',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/promises.ts' },
-					{ path: 'src/ts/promises.test.ts', role: 'test' },
-				],
-			},
-			{
 				name: 'rand',
 				type: 'util',
 				files: [{ path: 'src/ts/rand.ts' }, { path: 'src/ts/rand.test.ts', role: 'test' }],
@@ -146,14 +114,6 @@ export default defineConfig({
 				name: 'time',
 				type: 'util',
 				files: [{ path: 'src/ts/time.ts' }, { path: 'src/ts/time.test.ts', role: 'test' }],
-			},
-			{
-				name: 'truncate',
-				type: 'util',
-				files: [
-					{ path: 'src/ts/truncate.ts' },
-					{ path: 'src/ts/truncate.test.ts', role: 'test' },
-				],
 			},
 			{
 				name: 'types',

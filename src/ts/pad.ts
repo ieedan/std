@@ -1,23 +1,5 @@
 import { stripVTControlCharacters as stripAsni } from 'node:util';
 
-/** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
- *
- * @param str String to add padding to
- * @param space Whitespace to add
- * @param padWith Character to use to pad the string
- * @returns
- *
- * ## Usage
- * ```ts
- * const padded = leftPad("Hello", 3, ".");
- *
- * console.log(padded); // '...Hello'
- * ```
- */
-export function leftPad(str: string, space: number, padWith = ' '): string {
-	return padWith.repeat(space) + str;
-}
-
 /** Adds the `padWith` until the string length matches the `length`
  *
  * @param str
@@ -38,24 +20,6 @@ export function leftPadMin(str: string, length: number, padWith = ' '): string {
 		throw new Error('String length is greater than the length provided.');
 
 	return padWith.repeat(length - strippedLength) + str;
-}
-
-/** Adds the `padWith` (default `' '`) to the string the amount of times specified by the `space` argument
- *
- * @param str String to add padding to
- * @param space Whitespace to add
- * @param padWith Character to use to pad the string
- * @returns
- *
- * ## Usage
- * ```ts
- * const padded = rightPad("Hello", 3, ".");
- *
- * console.log(padded); // 'Hello...'
- * ```
- */
-export function rightPad(str: string, space: number, padWith = ' '): string {
-	return str + padWith.repeat(space);
 }
 
 /** Adds the `padWith` until the string length matches the `length`

@@ -120,3 +120,51 @@ describe('kebabToPascal', () => {
 		expect(casing.kebabToPascal('hello-world-')).toBe('HelloWorld');
 	});
 });
+
+const validLetters = [
+	'a',
+	'b',
+	'c',
+	'd',
+	'e',
+	'f',
+	'g',
+	'h',
+	'i',
+	'j',
+	'k',
+	'l',
+	'm',
+	'n',
+	'o',
+	'p',
+	'q',
+	'r',
+	's',
+	't',
+	'u',
+	'v',
+	'w',
+	'x',
+	'y',
+	'z',
+];
+
+describe('isLetter', () => {
+	it('correctly identifies letters', () => {
+		for (const letter of validLetters) {
+			expect(casing.isLetter(letter)).toBe(true);
+			expect(casing.isLetter(letter.toUpperCase())).toBe(true);
+		}
+	});
+
+	it('correctly identifies non-letters', () => {
+		expect(casing.isLetter('1')).toBe(false);
+		expect(casing.isLetter('|')).toBe(false);
+		expect(casing.isLetter(']')).toBe(false);
+	});
+
+	it('throws if given more than 1 character', () => {
+		expect(() => casing.isLetter('ab')).toThrow();
+	});
+});
