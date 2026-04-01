@@ -1,8 +1,8 @@
-import { defineConfig } from 'jsrepo';
-import { getRegistryItems } from './.jsrepo/registry-items.js';
-import { readmeOutput } from './.jsrepo/readme-output.js';
-import { repository } from 'jsrepo/outputs';
 import { execSync } from 'node:child_process';
+import { defineConfig } from 'jsrepo';
+import { repository } from 'jsrepo/outputs';
+import { readmeOutput } from './.jsrepo/readme-output.js';
+import { getRegistryItems } from './.jsrepo/registry-items.js';
 
 export default defineConfig({
 	registry: ({ cwd }) => ({
